@@ -19,6 +19,7 @@
         <span>Юрий Закусов</span>
       </a>
       <nav class="nav-links" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
         <a href="index.html#portfolio">Мои работы</a>
         <a href="index.html#services">Чем могу помочь</a>
         <a href="index.html#process">Как я работаю</a>
@@ -41,6 +42,7 @@
     </div>
   </header>
   <div id="mobileMenu" class="mobile-menu" aria-label="Мобильное меню">
+    <a href="index.html">Главная</a>
     <a href="index.html#portfolio">Мои работы</a>
     <a href="index.html#services">Чем могу помочь</a>
     <a href="index.html#process">Как я работаю</a>
@@ -53,24 +55,27 @@
   </div>
   <main>
     
-    <!-- 1. Главный экран -->
+    <!-- 1. Главный экран (полноширинный) -->
     <section class="hero-section" aria-label="Главный экран">
-      <div class="container">
-        <div id="heroStage" class="hero-stage" tabindex="0" aria-roledescription="carousel" aria-label="Направления работы">
-          <div class="hero-slides">
-            
+      <div id="heroStage" class="hero-stage" tabindex="0" aria-roledescription="carousel" aria-label="Направления работы">
+        <div class="hero-slides">
+          
     <div class="hero-slide is-active" aria-hidden="false">
       <div class="hero-media">
         <img src="assets/images/hero-business.jpg" alt="Владелец бизнеса спокойно пьёт утренний кофе, пока заказы и задачи раскладываются автоматически" fetchpriority="high">
       </div>
       <div class="hero-scrim" aria-hidden="true"></div>
-      <div class="hero-content">
-        <div class="hero-badge"><span class="hero-badge-dot"></span>Автоматизация бизнеса</div>
-        <h1 class="hero-title">Рутина работает сама, а вы занимаетесь развитием дела</h1>
-        <p class="hero-subtitle">Связываю таблицы, почту, CRM и мессенджеры так, чтобы заказы, отчёты и напоминания не требовали ручного переноса каждый день.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-          <a class="btn btn-coral" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+      <div class="hero-inner">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge"><span class="hero-badge-dot"></span>Автоматизация бизнеса</div>
+            <h1 class="hero-title">Рутина работает сама, а вы занимаетесь развитием дела</h1>
+            <p class="hero-subtitle">Связываю таблицы, почту, CRM и мессенджеры так, чтобы заказы, отчёты и напоминания не требовали ручного переноса каждый день.</p>
+            <div class="hero-cta">
+              <a class="btn btn-coral" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <a class="btn btn-glass" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -79,13 +84,17 @@
         <img src="assets/images/hero-ai-agents.jpg" alt="Специалисты в светлой студии работают с понятными карточками сводок и задач" loading="lazy">
       </div>
       <div class="hero-scrim" aria-hidden="true"></div>
-      <div class="hero-content">
-        <div class="hero-badge"><span class="hero-badge-dot"></span>ИИ-агенты</div>
-        <h2 class="hero-title">ИИ-помощники разбирают письма, сводки и тексты за минуты</h2>
-        <p class="hero-subtitle">Настраиваю понятные рабочие сценарии с языковыми моделями: утренние дайджесты, анализ источников, черновики ответов и контроль задач.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-          <a class="btn btn-coral" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+      <div class="hero-inner">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge"><span class="hero-badge-dot"></span>ИИ-агенты</div>
+            <h2 class="hero-title">ИИ-помощники разбирают письма, сводки и тексты за минуты</h2>
+            <p class="hero-subtitle">Настраиваю понятные рабочие сценарии с языковыми моделями: утренние дайджесты, анализ источников, черновики ответов и контроль задач.</p>
+            <div class="hero-cta">
+              <a class="btn btn-coral" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <a class="btn btn-glass" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -94,13 +103,17 @@
         <img src="assets/images/hero-telegram-bots.jpg" alt="Клиент спокойно оформляет заявку в Telegram-боте вечером на смартфоне" loading="lazy">
       </div>
       <div class="hero-scrim" aria-hidden="true"></div>
-      <div class="hero-content">
-        <div class="hero-badge"><span class="hero-badge-dot"></span>Telegram-боты</div>
-        <h2 class="hero-title">Клиенты пишут вечером — бот отвечает сразу и передаёт заявку</h2>
-        <p class="hero-subtitle">Запись на услугу, ответы на частые вопросы, сбор контактов и уведомление менеджеру прямо в Telegram — без потерянных обращений.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-          <a class="btn btn-coral" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+      <div class="hero-inner">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge"><span class="hero-badge-dot"></span>Telegram-боты</div>
+            <h2 class="hero-title">Клиенты пишут вечером — бот отвечает сразу и передаёт заявку</h2>
+            <p class="hero-subtitle">Запись на услугу, ответы на частые вопросы, сбор контактов и уведомление менеджеру прямо в Telegram — без потерянных обращений.</p>
+            <div class="hero-cta">
+              <a class="btn btn-coral" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <a class="btn btn-glass" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -109,28 +122,36 @@
         <img src="assets/images/hero-crm.jpg" alt="Менеджер работает с аккуратной канбан-доской заявок в CRM" loading="lazy">
       </div>
       <div class="hero-scrim" aria-hidden="true"></div>
-      <div class="hero-content">
-        <div class="hero-badge"><span class="hero-badge-dot"></span>CRM и заявки</div>
-        <h2 class="hero-title">Ни одна заявка не теряется между сайтом, почтой и чатом</h2>
-        <p class="hero-subtitle">Собираю обращения в единую воронку, проверяю дубли, обновляю карточки и мгновенно сообщаю ответственному о новом клиенте.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-          <a class="btn btn-coral" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+      <div class="hero-inner">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge"><span class="hero-badge-dot"></span>CRM и заявки</div>
+            <h2 class="hero-title">Ни одна заявка не теряется между сайтом, почтой и чатом</h2>
+            <p class="hero-subtitle">Собираю обращения в единую воронку, проверяю дубли, обновляю карточки и мгновенно сообщаю ответственному о новом клиенте.</p>
+            <div class="hero-cta">
+              <a class="btn btn-coral" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <a class="btn btn-glass" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="hero-slide " aria-hidden="true">
       <div class="hero-media">
-        <img src="assets/images/hero-python.svg" alt="Разрозненные файлы и данные автоматически превращаются в чистую проверенную таблицу" loading="lazy">
+        <img src="assets/images/hero-python.jpg" alt="Разрозненные файлы и данные автоматически превращаются в чистую проверенную таблицу" loading="lazy">
       </div>
       <div class="hero-scrim" aria-hidden="true"></div>
-      <div class="hero-content">
-        <div class="hero-badge"><span class="hero-badge-dot"></span>Python-автоматизация</div>
-        <h2 class="hero-title">Python забирает на себя скучную работу с файлами, API и таблицами</h2>
-        <p class="hero-subtitle">Импорт заказов из API, проверка тысяч документов, сверка PDF/DXF и чистые таблицы для Excel без ручного копирования и случайных ошибок.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-          <a class="btn btn-coral" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+      <div class="hero-inner">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge"><span class="hero-badge-dot"></span>Python-автоматизация</div>
+            <h2 class="hero-title">Python забирает на себя скучную работу с файлами, API и таблицами</h2>
+            <p class="hero-subtitle">Импорт заказов из API, проверка тысяч документов, сверка PDF/DXF и чистые таблицы для Excel без ручного копирования и случайных ошибок.</p>
+            <div class="hero-cta">
+              <a class="btn btn-coral" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <a class="btn btn-glass" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -139,20 +160,26 @@
         <img src="assets/images/hero-websites.jpg" alt="Предприниматель показывает клиенту современный адаптивный сайт на ноутбуке и телефоне" loading="lazy">
       </div>
       <div class="hero-scrim" aria-hidden="true"></div>
-      <div class="hero-content">
-        <div class="hero-badge"><span class="hero-badge-dot"></span>Современные сайты</div>
-        <h2 class="hero-title">Лёгкие и понятные сайты, с которых удобно оставить заявку</h2>
-        <p class="hero-subtitle">Делаю аккуратные адаптивные сайты для бизнеса и специалистов: быстро открываются на телефоне и сразу приводят в Telegram или CRM.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-          <a class="btn btn-coral" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+      <div class="hero-inner">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge"><span class="hero-badge-dot"></span>Современные сайты</div>
+            <h2 class="hero-title">Лёгкие и понятные сайты, с которых удобно оставить заявку</h2>
+            <p class="hero-subtitle">Делаю аккуратные адаптивные сайты для бизнеса и специалистов: быстро открываются на телефоне и сразу приводят в Telegram или CRM.</p>
+            <div class="hero-cta">
+              <a class="btn btn-coral" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <a class="btn btn-glass" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-          </div>
-          <div class="hero-controls">
-            <div class="hero-dots" role="tablist" aria-label="Выбор слайда">
-              
+        </div>
+        <div class="hero-controls-wrap">
+          <div class="container">
+            <div class="hero-controls">
+              <div class="hero-dots" role="tablist" aria-label="Выбор слайда">
+                
     <button class="hero-dot is-active" type="button" aria-label="Слайд 1: Автоматизация бизнеса" aria-current="true">
       <span class="hero-dot-progress"></span>
     </button>
@@ -171,42 +198,39 @@
     <button class="hero-dot " type="button" aria-label="Слайд 6: Современные сайты" aria-current="false">
       <span class="hero-dot-progress"></span>
     </button>
-            </div>
-            <div class="hero-nav-group">
-              <span id="heroCounter" class="hero-counter" aria-live="polite">1 / 6</span>
-              <button id="heroPlayPause" class="hero-icon-btn" type="button" aria-label="Поставить на паузу" data-state="playing">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
-              </button>
-              <button id="heroPrev" class="hero-icon-btn" type="button" aria-label="Предыдущий слайд"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
-              <button id="heroNext" class="hero-icon-btn" type="button" aria-label="Следующий слайд"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+              </div>
+              <div class="hero-nav-group">
+                <span id="heroCounter" class="hero-counter" aria-live="polite">1 / 6</span>
+                <button id="heroPlayPause" class="hero-icon-btn" type="button" aria-label="Поставить на паузу" data-state="playing">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+                </button>
+                <button id="heroPrev" class="hero-icon-btn" type="button" aria-label="Предыдущий слайд"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+                <button id="heroNext" class="hero-icon-btn" type="button" aria-label="Следующий слайд"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="facts-strip">
-          <div class="fact-card">
-            <div>
+      <div class="facts-bar">
+        <div class="container">
+          <div class="facts-strip">
+            <div class="fact-card">
               <div class="fact-num">15</div>
               <div class="fact-label">Проверенных работ</div>
               <div class="fact-sub">Из канала t.me/integrator_raboty и архива V3</div>
             </div>
-          </div>
-          <div class="fact-card">
-            <div>
+            <div class="fact-card">
               <div class="fact-num">5</div>
               <div class="fact-label">Коммерческих кейсов</div>
               <div class="fact-sub">Обезличенные сценарии n8n, API, Supabase и ИИ</div>
             </div>
-          </div>
-          <div class="fact-card">
-            <div>
+            <div class="fact-card">
               <div class="fact-num">100%</div>
               <div class="fact-label">Честные статусы</div>
               <div class="fact-sub">Чётко разделяю коммерцию, личные проекты и демо</div>
             </div>
-          </div>
-          <div class="fact-card">
-            <div>
+            <div class="fact-card">
               <div class="fact-num">1–2 дня</div>
               <div class="fact-label">Быстрый пилот</div>
               <div class="fact-sub">Сначала проверяем задачу на малом объёме данных</div>
@@ -235,13 +259,12 @@
   <article class="featured-card" data-categories="ai-agents,python,telegram,crm">
     <a class="card-media" href="projects/aiaa-v47/index.html">
       <img src="assets/images/hero-ai-agents.jpg" alt="AIAA V47 — собственная система AI-автоматизации" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-own">Собственная разработка</span>
-        <span class="screen-pill">Есть скриншоты</span>
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">ИИ-агенты · Python · Telegram</div>
+      <div class="card-meta-row">
+        <div class="card-cat">ИИ-агенты · Python · Telegram</div>
+        <span class="status-badge status-own">Собственная разработка</span>
+      </div>
       <h3 class="card-title"><a href="projects/aiaa-v47/index.html">AIAA V47 — собственная система AI-автоматизации</a></h3>
       <p class="card-problem">Когда мониторинг площадок, разбор входящих задач и контроль действий делаются вручную в десятках вкладок, быстро накапливается усталость, теряются важные запросы и легко случайно отправить дубль.</p>
       <div class="card-benefit"><strong>Польза:</strong> Все шаги прозрачно фиксируются: видно, что именно прочитано, что отфильтровано и какие действия прошли проверку. Например, сборщик стабильно проходит 31 из 31 подключённого Telegram-источника за один цикл без ручного обхода.</div>
@@ -257,13 +280,12 @@
   <article class="featured-card" data-categories="ai-agents,n8n,analytics">
     <a class="card-media" href="projects/pis-daily-briefing/index.html">
       <img src="assets/images/proj-digest.jpg" alt="PIS Daily Briefing — утренний AI-дайджест для команды" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">ИИ-агенты · n8n · Аналитика</div>
+      <div class="card-meta-row">
+        <div class="card-cat">ИИ-агенты · n8n · Аналитика</div>
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+      </div>
       <h3 class="card-title"><a href="projects/pis-daily-briefing/index.html">PIS Daily Briefing — утренний AI-дайджест для команды</a></h3>
       <p class="card-problem">Утром руководителю и команде приходится вручную просматривать десятки сообщений, отчётов и внешних источников, чтобы понять, что важного произошло за сутки.</p>
       <div class="card-benefit"><strong>Польза:</strong> Вместо долгого чтения разрозненных лент команда получает короткий, аккуратно оформленный дайджест с главными фактами и ссылками на первоисточники.</div>
@@ -279,13 +301,12 @@
   <article class="featured-card" data-categories="analytics,n8n">
     <a class="card-media" href="projects/market-intelligence/index.html">
       <img src="assets/images/proj-analytics.jpg" alt="Market Intelligence — автоматическая аналитика рынка" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">Аналитика · n8n · Базы данных</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Аналитика · n8n · Базы данных</div>
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+      </div>
       <h3 class="card-title"><a href="projects/market-intelligence/index.html">Market Intelligence — автоматическая аналитика рынка</a></h3>
       <p class="card-problem">Отслеживать изменения на рынке, предложения конкурентов и новые тренды вручную долго — таблицы быстро устаревают, а важные сигналы замечаются слишком поздно.</p>
       <div class="card-benefit"><strong>Польза:</strong> Вся рыночная картина хранится в одном месте без ручного копирования, с историей изменений и готовой структурой для отчётов.</div>
@@ -301,13 +322,12 @@
   <article class="featured-card" data-categories="crm,n8n">
     <a class="card-media" href="projects/kanban-automation/index.html">
       <img src="assets/images/proj-kanban.jpg" alt="Kanban Automation — синхронизация задач через Webhook и Supabase" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">CRM · n8n · Webhook</div>
+      <div class="card-meta-row">
+        <div class="card-cat">CRM · n8n · Webhook</div>
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+      </div>
       <h3 class="card-title"><a href="projects/kanban-automation/index.html">Kanban Automation — синхронизация задач через Webhook и Supabase</a></h3>
       <p class="card-problem">Когда задачи ведутся в одной системе, а база клиентов или статусы — в другой, команде приходится переносить изменения руками. Из-за этого возникают расхождения и забытые статусы.</p>
       <div class="card-benefit"><strong>Польза:</strong> Карточки обновляются согласованно без двойного ввода данных, а команда видит актуальный статус каждой задачи.</div>
@@ -322,14 +342,13 @@
   </article>
   <article class="featured-card" data-categories="python,analytics">
     <a class="card-media" href="projects/python-api-orders-csv/index.html">
-      <img src="assets/images/hero-python.svg" alt="Python: импорт заказов из API в CSV без дублей" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-prototype">Проверенный прототип (4/4 теста)</span>
-        <span class="screen-pill">Есть скриншоты</span>
-      </div>
+      <img src="assets/images/hero-python.jpg" alt="Python: импорт заказов из API в CSV без дублей" loading="lazy" width="640" height="400">
     </a>
     <div class="card-body">
-      <div class="card-cat">Python · API · Таблицы</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Python · API · Таблицы</div>
+        <span class="status-badge status-prototype">Проверенный прототип (4/4 теста)</span>
+      </div>
       <h3 class="card-title"><a href="projects/python-api-orders-csv/index.html">Python: импорт заказов из API в CSV без дублей</a></h3>
       <p class="card-problem">При выгрузке заказов из интернет-магазина или CRM через API часто случаются сбои сети, повторяющиеся ID и «битые» суммы, из-за которых ломается итоговая таблица для бухгалтерии.</p>
       <div class="card-benefit"><strong>Польза:</strong> Даже при повторном запуске файл остаётся абсолютно тем же (подтверждено сверкой SHA256), а при ошибке старая таблица не портится. Пройдено 4 из 4 модульных тестов.</div>
@@ -345,13 +364,12 @@
   <article class="featured-card" data-categories="sites">
     <a class="card-media" href="projects/site-domlad/index.html">
       <img src="assets/images/hero-websites.jpg" alt="Адаптивный сайт-визитка «ДомЛад»" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-demo">Демонстрация</span>
-        <span class="screen-pill">Есть скриншоты</span>
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">Сайты · Адаптивная вёрстка</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Сайты · Адаптивная вёрстка</div>
+        <span class="status-badge status-demo">Демонстрация</span>
+      </div>
       <h3 class="card-title"><a href="projects/site-domlad/index.html">Адаптивный сайт-визитка «ДомЛад»</a></h3>
       <p class="card-problem">Небольшой компании часто нужен понятный, быстрый и аккуратный сайт, который одинаково хорошо открывается на смартфоне и компьютере, без тяжёлых конструкторов и лишней перегруженности.</p>
       <div class="card-benefit"><strong>Польза:</strong> Мгновенная загрузка, чистая структура услуг и проверенное отображение на узких экранах (390 px) без съехавших блоков.</div>
@@ -367,13 +385,12 @@
   <article class="featured-card" data-categories="telegram,ai-agents,crm,n8n">
     <a class="card-media" href="projects/telegram-crm-support-bot/index.html">
       <img src="assets/images/hero-telegram-bots.jpg" alt="Умный AI-ассистент поддержки клиентов в Telegram с CRM-ядром" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">Telegram · ИИ-агенты · CRM</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Telegram · ИИ-агенты · CRM</div>
+        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
+      </div>
       <h3 class="card-title"><a href="projects/telegram-crm-support-bot/index.html">Умный AI-ассистент поддержки клиентов в Telegram с CRM-ядром</a></h3>
       <p class="card-problem">Клиенты задают однотипные вопросы в Telegram в любое время суток, а менеджеры тратят полдня на повторяющиеся ответы и ручное занесение контактов в базу.</p>
       <div class="card-benefit"><strong>Польза:</strong> Быстрые ответы клиентам без ожидания и аккуратная история обращений в одном месте.</div>
@@ -445,13 +462,12 @@
   <article class="project-card reveal" data-categories="ai-agents,python,telegram,crm">
     <a class="card-media" href="projects/aiaa-v47/index.html">
       <img src="assets/images/hero-ai-agents.jpg" alt="AIAA V47 — собственная система AI-автоматизации" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-own">Собственная разработка</span>
-        <span class="screen-pill">Есть скриншоты</span>
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">ИИ-агенты · Python · Telegram</div>
+      <div class="card-meta-row">
+        <div class="card-cat">ИИ-агенты · Python · Telegram</div>
+        <span class="status-badge status-own">Собственная разработка</span>
+      </div>
       <h3 class="card-title"><a href="projects/aiaa-v47/index.html">AIAA V47 — собственная система AI-автоматизации</a></h3>
       <p class="card-problem">Когда мониторинг площадок, разбор входящих задач и контроль действий делаются вручную в десятках вкладок, быстро накапливается усталость, теряются важные запросы и легко случайно отправить дубль.</p>
       <div class="card-benefit"><strong>Польза:</strong> Все шаги прозрачно фиксируются: видно, что именно прочитано, что отфильтровано и какие действия прошли проверку. Например, сборщик стабильно проходит 31 из 31 подключённого Telegram-источника за один цикл без ручного обхода.</div>
@@ -467,13 +483,12 @@
   <article class="project-card reveal" data-categories="ai-agents,n8n,analytics">
     <a class="card-media" href="projects/pis-daily-briefing/index.html">
       <img src="assets/images/proj-digest.jpg" alt="PIS Daily Briefing — утренний AI-дайджест для команды" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">ИИ-агенты · n8n · Аналитика</div>
+      <div class="card-meta-row">
+        <div class="card-cat">ИИ-агенты · n8n · Аналитика</div>
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+      </div>
       <h3 class="card-title"><a href="projects/pis-daily-briefing/index.html">PIS Daily Briefing — утренний AI-дайджест для команды</a></h3>
       <p class="card-problem">Утром руководителю и команде приходится вручную просматривать десятки сообщений, отчётов и внешних источников, чтобы понять, что важного произошло за сутки.</p>
       <div class="card-benefit"><strong>Польза:</strong> Вместо долгого чтения разрозненных лент команда получает короткий, аккуратно оформленный дайджест с главными фактами и ссылками на первоисточники.</div>
@@ -489,13 +504,12 @@
   <article class="project-card reveal" data-categories="analytics,n8n">
     <a class="card-media" href="projects/market-intelligence/index.html">
       <img src="assets/images/proj-analytics.jpg" alt="Market Intelligence — автоматическая аналитика рынка" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">Аналитика · n8n · Базы данных</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Аналитика · n8n · Базы данных</div>
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+      </div>
       <h3 class="card-title"><a href="projects/market-intelligence/index.html">Market Intelligence — автоматическая аналитика рынка</a></h3>
       <p class="card-problem">Отслеживать изменения на рынке, предложения конкурентов и новые тренды вручную долго — таблицы быстро устаревают, а важные сигналы замечаются слишком поздно.</p>
       <div class="card-benefit"><strong>Польза:</strong> Вся рыночная картина хранится в одном месте без ручного копирования, с историей изменений и готовой структурой для отчётов.</div>
@@ -511,13 +525,12 @@
   <article class="project-card reveal" data-categories="crm,n8n">
     <a class="card-media" href="projects/email-monitor/index.html">
       <img src="assets/images/proj-email.jpg" alt="Email Monitor — умный разбор входящей почты" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">Заявки · n8n · Почта</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Заявки · n8n · Почта</div>
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+      </div>
       <h3 class="card-title"><a href="projects/email-monitor/index.html">Email Monitor — умный разбор входящей почты</a></h3>
       <p class="card-problem">В рабочую почту одновременно падают заявки клиентов, уточнения, рассылки и уведомления — важные письма тонут в общем потоке, а сотрудники отвечают с задержкой.</p>
       <div class="card-benefit"><strong>Польза:</strong> Важные обращения сразу попадают в работу, не теряются среди информационных рассылок, а порядок обработки становится предсказуемым и прозрачным.</div>
@@ -533,13 +546,12 @@
   <article class="project-card reveal" data-categories="crm,n8n">
     <a class="card-media" href="projects/kanban-automation/index.html">
       <img src="assets/images/proj-kanban.jpg" alt="Kanban Automation — синхронизация задач через Webhook и Supabase" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">CRM · n8n · Webhook</div>
+      <div class="card-meta-row">
+        <div class="card-cat">CRM · n8n · Webhook</div>
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+      </div>
       <h3 class="card-title"><a href="projects/kanban-automation/index.html">Kanban Automation — синхронизация задач через Webhook и Supabase</a></h3>
       <p class="card-problem">Когда задачи ведутся в одной системе, а база клиентов или статусы — в другой, команде приходится переносить изменения руками. Из-за этого возникают расхождения и забытые статусы.</p>
       <div class="card-benefit"><strong>Польза:</strong> Карточки обновляются согласованно без двойного ввода данных, а команда видит актуальный статус каждой задачи.</div>
@@ -555,13 +567,12 @@
   <article class="project-card reveal" data-categories="analytics,n8n">
     <a class="card-media" href="projects/social-monitor/index.html">
       <img src="assets/images/proj-social.jpg" alt="Social Monitor — мониторинг социальных источников" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">Аналитика · n8n · Соцсети</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Аналитика · n8n · Соцсети</div>
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+      </div>
       <h3 class="card-title"><a href="projects/social-monitor/index.html">Social Monitor — мониторинг социальных источников</a></h3>
       <p class="card-problem">Вручную проверять упоминания, новые публикации и активность в социальных источниках неудобно — легко пропустить важный инфоповод или обсуждение.</p>
       <div class="card-benefit"><strong>Польза:</strong> Новые публикации и сигналы собираются регулярно в единый поток, который удобно просматривать и анализировать команде.</div>
@@ -576,14 +587,13 @@
   </article>
   <article class="project-card reveal" data-categories="python,analytics">
     <a class="card-media" href="projects/python-api-orders-csv/index.html">
-      <img src="assets/images/hero-python.svg" alt="Python: импорт заказов из API в CSV без дублей" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-prototype">Проверенный прототип (4/4 теста)</span>
-        <span class="screen-pill">Есть скриншоты</span>
-      </div>
+      <img src="assets/images/hero-python.jpg" alt="Python: импорт заказов из API в CSV без дублей" loading="lazy" width="640" height="400">
     </a>
     <div class="card-body">
-      <div class="card-cat">Python · API · Таблицы</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Python · API · Таблицы</div>
+        <span class="status-badge status-prototype">Проверенный прототип (4/4 теста)</span>
+      </div>
       <h3 class="card-title"><a href="projects/python-api-orders-csv/index.html">Python: импорт заказов из API в CSV без дублей</a></h3>
       <p class="card-problem">При выгрузке заказов из интернет-магазина или CRM через API часто случаются сбои сети, повторяющиеся ID и «битые» суммы, из-за которых ломается итоговая таблица для бухгалтерии.</p>
       <div class="card-benefit"><strong>Польза:</strong> Даже при повторном запуске файл остаётся абсолютно тем же (подтверждено сверкой SHA256), а при ошибке старая таблица не портится. Пройдено 4 из 4 модульных тестов.</div>
@@ -598,14 +608,13 @@
   </article>
   <article class="project-card reveal" data-categories="python,analytics">
     <a class="card-media" href="projects/python-html-catalog-csv/index.html">
-      <img src="assets/images/hero-python.svg" alt="Python: каталог HTML-файлов в таблицу CSV с контролем SHA256" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-prototype">Проверенный прототип (5/5 тестов)</span>
-        <span class="screen-pill">Есть скриншоты</span>
-      </div>
+      <img src="assets/images/hero-python.jpg" alt="Python: каталог HTML-файлов в таблицу CSV с контролем SHA256" loading="lazy" width="640" height="400">
     </a>
     <div class="card-body">
-      <div class="card-cat">Python · Обработка файлов</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Python · Обработка файлов</div>
+        <span class="status-badge status-prototype">Проверенный прототип (5/5 тестов)</span>
+      </div>
       <h3 class="card-title"><a href="projects/python-html-catalog-csv/index.html">Python: каталог HTML-файлов в таблицу CSV с контролем SHA256</a></h3>
       <p class="card-problem">Когда нужно разобрать большой архив HTML-документов и собрать по ним единый реестр для Excel, ручная работа невозможна, а простой скрипт может пропустить дубли или сломать ячейки Excel формулами.</p>
       <div class="card-benefit"><strong>Польза:</strong> Чистая таблица с точным контролем каждого файла и безопасным повторным запуском. Все 5 из 5 модульных тестов пройдены.</div>
@@ -621,13 +630,12 @@
   <article class="project-card reveal" data-categories="sites">
     <a class="card-media" href="projects/site-domlad/index.html">
       <img src="assets/images/hero-websites.jpg" alt="Адаптивный сайт-визитка «ДомЛад»" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-demo">Демонстрация</span>
-        <span class="screen-pill">Есть скриншоты</span>
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">Сайты · Адаптивная вёрстка</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Сайты · Адаптивная вёрстка</div>
+        <span class="status-badge status-demo">Демонстрация</span>
+      </div>
       <h3 class="card-title"><a href="projects/site-domlad/index.html">Адаптивный сайт-визитка «ДомЛад»</a></h3>
       <p class="card-problem">Небольшой компании часто нужен понятный, быстрый и аккуратный сайт, который одинаково хорошо открывается на смартфоне и компьютере, без тяжёлых конструкторов и лишней перегруженности.</p>
       <div class="card-benefit"><strong>Польза:</strong> Мгновенная загрузка, чистая структура услуг и проверенное отображение на узких экранах (390 px) без съехавших блоков.</div>
@@ -643,13 +651,12 @@
   <article class="project-card reveal" data-categories="crm">
     <a class="card-media" href="projects/crm-leads-demo/index.html">
       <img src="assets/images/hero-crm.jpg" alt="Демо обработки входящих заявок и маршрутизации в CRM" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-demo">Демонстрация</span>
-        <span class="screen-pill">Есть скриншоты</span>
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">CRM · Автоматизация заявок</div>
+      <div class="card-meta-row">
+        <div class="card-cat">CRM · Автоматизация заявок</div>
+        <span class="status-badge status-demo">Демонстрация</span>
+      </div>
       <h3 class="card-title"><a href="projects/crm-leads-demo/index.html">Демо обработки входящих заявок и маршрутизации в CRM</a></h3>
       <p class="card-problem">Когда заявки приходят с формы сайта, звонка или мессенджера без единого маршрута, менеджеры создают дубли карточек или забывают перезвонить клиенту.</p>
       <div class="card-benefit"><strong>Польза:</strong> Понятная архитектура обработки заявок, которую можно быстро перенести на реальную CRM заказчика (Bitrix24, amoCRM, Supabase или Google Таблицы).</div>
@@ -664,14 +671,13 @@
   </article>
   <article class="project-card reveal" data-categories="python,analytics">
     <a class="card-media" href="projects/python-pdf-dxf-check/index.html">
-      <img src="assets/images/hero-python.svg" alt="Python: автоматическая проверка файлов PDF и DXF" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-demo">Демонстрация</span>
-        <span class="screen-pill">Есть скриншоты</span>
-      </div>
+      <img src="assets/images/hero-python.jpg" alt="Python: автоматическая проверка файлов PDF и DXF" loading="lazy" width="640" height="400">
     </a>
     <div class="card-body">
-      <div class="card-cat">Python · Документы и чертежи</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Python · Документы и чертежи</div>
+        <span class="status-badge status-demo">Демонстрация</span>
+      </div>
       <h3 class="card-title"><a href="projects/python-pdf-dxf-check/index.html">Python: автоматическая проверка файлов PDF и DXF</a></h3>
       <p class="card-problem">В инженерных и производственных задачах ручная проверка комплектности и параметров десятков файлов PDF и DXF отнимает много времени и чревата пропуском мелких несоответствий.</p>
       <div class="card-benefit"><strong>Польза:</strong> Экономит время инженера или менеджера на первичной проверке комплекта документов перед передачей в работу.</div>
@@ -687,13 +693,12 @@
   <article class="project-card reveal" data-categories="telegram,ai-agents,crm,n8n">
     <a class="card-media" href="projects/telegram-crm-support-bot/index.html">
       <img src="assets/images/hero-telegram-bots.jpg" alt="Умный AI-ассистент поддержки клиентов в Telegram с CRM-ядром" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">Telegram · ИИ-агенты · CRM</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Telegram · ИИ-агенты · CRM</div>
+        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
+      </div>
       <h3 class="card-title"><a href="projects/telegram-crm-support-bot/index.html">Умный AI-ассистент поддержки клиентов в Telegram с CRM-ядром</a></h3>
       <p class="card-problem">Клиенты задают однотипные вопросы в Telegram в любое время суток, а менеджеры тратят полдня на повторяющиеся ответы и ручное занесение контактов в базу.</p>
       <div class="card-benefit"><strong>Польза:</strong> Быстрые ответы клиентам без ожидания и аккуратная история обращений в одном месте.</div>
@@ -709,13 +714,12 @@
   <article class="project-card reveal" data-categories="telegram,ai-agents,n8n,crm">
     <a class="card-media" href="projects/telegram-doctor-booking/index.html">
       <img src="assets/images/proj-telegram-bot.jpg" alt="ИИ-помощник записи на приём через Telegram и Google Таблицы" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">Telegram · Запись клиентов · n8n</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Telegram · Запись клиентов · n8n</div>
+        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
+      </div>
       <h3 class="card-title"><a href="projects/telegram-doctor-booking/index.html">ИИ-помощник записи на приём через Telegram и Google Таблицы</a></h3>
       <p class="card-problem">Администраторы клиник, салонов и студий постоянно отвлекаются на переписки в мессенджере, чтобы подобрать свободное окно и внести клиента в расписание.</p>
       <div class="card-benefit"><strong>Польза:</strong> Клиент записывается сам за пару сообщений, а расписание в таблице всегда остаётся актуальным без лишних звонков.</div>
@@ -731,13 +735,12 @@
   <article class="project-card reveal" data-categories="telegram,n8n">
     <a class="card-media" href="projects/n8n-rss-telegram-monitor/index.html">
       <img src="assets/images/proj-email.jpg" alt="Автопоиск вакансий и заказов: RSS → Telegram без дублей" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">n8n · Telegram · Мониторинг</div>
+      <div class="card-meta-row">
+        <div class="card-cat">n8n · Telegram · Мониторинг</div>
+        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
+      </div>
       <h3 class="card-title"><a href="projects/n8n-rss-telegram-monitor/index.html">Автопоиск вакансий и заказов: RSS → Telegram без дублей</a></h3>
       <p class="card-problem">Чтобы не упустить нужную вакансию или свежий заказ, приходится по пять раз в день вручную обновлять десятки сайтов и пролистывать одно и то же.</p>
       <div class="card-benefit"><strong>Польза:</strong> Вы узнаёте о подходящих запросах первым и не тратите время на ручную проверку лент.</div>
@@ -753,13 +756,12 @@
   <article class="project-card reveal" data-categories="ai-agents,n8n,analytics">
     <a class="card-media" href="projects/trend2content-ai-sheets/index.html">
       <img src="assets/images/proj-social.jpg" alt="Trend2Content: сбор трендов соцсетей → идеи постов в Google Таблицы" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">ИИ-агенты · n8n · Аналитика</div>
+      <div class="card-meta-row">
+        <div class="card-cat">ИИ-агенты · n8n · Аналитика</div>
+        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
+      </div>
       <h3 class="card-title"><a href="projects/trend2content-ai-sheets/index.html">Trend2Content: сбор трендов соцсетей → идеи постов в Google Таблицы</a></h3>
       <p class="card-problem">Экспертам и маркетологам сложно каждую неделю придумывать актуальные темы для постов — поиск трендов и составление таблицы идей отнимают часы.</p>
       <div class="card-benefit"><strong>Польза:</strong> Вместо пустого листа вы получаете структурированную таблицу идей на основе живых обсуждений — остаётся только выбрать лучшие и опубликовать.</div>
@@ -958,15 +960,54 @@
   </main>
   
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Юрий Закусов</strong> · Автоматизация бизнеса, ИИ-агенты, Telegram-боты, n8n, CRM и Python
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html">
+            <span class="brand-mark">ЮЗ</span>
+            <span>Юрий Закусов</span>
+          </a>
+          <p class="footer-about">Автоматизация бизнеса, ИИ-агенты, Telegram-боты, n8n, CRM и Python. Понятные решения без лишней сложности и скрытых условий.</p>
+          <a class="btn btn-coral btn-sm" href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg>
+            <span>Написать в Telegram</span>
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>Разделы сайта</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#portfolio">Мои работы</a></li>
+            <li><a href="index.html#services">Чем могу помочь</a></li>
+            <li><a href="index.html#process">Как я работаю</a></li>
+            <li><a href="index.html#about">Обо мне</a></li>
+            <li><a href="index.html#contact">Обсудить задачу</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Направления</h4>
+          <ul>
+            <li><a href="index.html#portfolio">ИИ-агенты и AIAA V47</a></li>
+            <li><a href="index.html#portfolio">Telegram-боты</a></li>
+            <li><a href="index.html#portfolio">Сценарии n8n и Make</a></li>
+            <li><a href="index.html#portfolio">CRM и обработка заявок</a></li>
+            <li><a href="index.html#portfolio">Python, API и таблицы</a></li>
+            <li><a href="index.html#portfolio">Современные сайты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты и площадки</h4>
+          <ul>
+            <li><a href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer">Telegram: @yury_zakusov</a></li>
+            <li><a href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Канал: t.me/integrator_raboty</a></li>
+            <li><a href="https://www.fl.ru/user/yuryzakusov78/portfolio/8111474/" target="_blank" rel="noopener noreferrer">Портфолио на FL.ru</a></li>
+            <li><a href="https://work-zilla.com/portfolio/eLAZvV" target="_blank" rel="noopener noreferrer">Профиль на Workzilla</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer">Telegram: @yury_zakusov</a>
-        <a href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Канал с работами</a>
-        <a href="https://www.fl.ru/user/yuryzakusov78/portfolio/8111474/" target="_blank" rel="noopener noreferrer">FL.ru</a>
-        <a href="https://work-zilla.com/portfolio/eLAZvV" target="_blank" rel="noopener noreferrer">Workzilla</a>
+      <div class="footer-bottom">
+        <div>© 2026 Юрий Закусов · Все работы подтверждены первоисточниками</div>
+        <a class="footer-top-link" href="#top">Наверх ↑</a>
       </div>
     </div>
   </footer>

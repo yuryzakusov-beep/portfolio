@@ -133,7 +133,7 @@
     "status": "Проверенный прототип (4/4 теста)",
     "statusType": "prototype",
     "featured": true,
-    "coverImage": "assets/images/hero-python.svg",
+    "coverImage": "assets/images/hero-python.jpg",
     "realScreenshots": [
       {
         "src": "assets/screenshots/python-api-csv-screen.png",
@@ -158,7 +158,7 @@
     "status": "Проверенный прототип (5/5 тестов)",
     "statusType": "prototype",
     "featured": false,
-    "coverImage": "assets/images/hero-python.svg",
+    "coverImage": "assets/images/hero-python.jpg",
     "realScreenshots": [
       {
         "src": "assets/screenshots/python-html-csv-screen.png",
@@ -249,7 +249,7 @@
     "status": "Демонстрация",
     "statusType": "demo",
     "featured": false,
-    "coverImage": "assets/images/hero-python.svg",
+    "coverImage": "assets/images/hero-python.jpg",
     "realScreenshots": [
       {
         "src": "assets/screenshots/pdf-dxf-screen.png",

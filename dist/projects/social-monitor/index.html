@@ -19,6 +19,7 @@
         <span>Юрий Закусов</span>
       </a>
       <nav class="nav-links" aria-label="Основная навигация">
+        <a href="../../index.html">Главная</a>
         <a href="../../index.html#portfolio">Мои работы</a>
         <a href="../../index.html#services">Чем могу помочь</a>
         <a href="../../index.html#process">Как я работаю</a>
@@ -41,6 +42,7 @@
     </div>
   </header>
   <div id="mobileMenu" class="mobile-menu" aria-label="Мобильное меню">
+    <a href="../../index.html">Главная</a>
     <a href="../../index.html#portfolio">Мои работы</a>
     <a href="../../index.html#services">Чем могу помочь</a>
     <a href="../../index.html#process">Как я работаю</a>
@@ -125,13 +127,12 @@
   <article class="project-card reveal" data-categories="ai-agents,n8n,analytics">
     <a class="card-media" href="../../projects/pis-daily-briefing/index.html">
       <img src="../../assets/images/proj-digest.jpg" alt="PIS Daily Briefing — утренний AI-дайджест для команды" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">ИИ-агенты · n8n · Аналитика</div>
+      <div class="card-meta-row">
+        <div class="card-cat">ИИ-агенты · n8n · Аналитика</div>
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+      </div>
       <h3 class="card-title"><a href="../../projects/pis-daily-briefing/index.html">PIS Daily Briefing — утренний AI-дайджест для команды</a></h3>
       <p class="card-problem">Утром руководителю и команде приходится вручную просматривать десятки сообщений, отчётов и внешних источников, чтобы понять, что важного произошло за сутки.</p>
       <div class="card-benefit"><strong>Польза:</strong> Вместо долгого чтения разрозненных лент команда получает короткий, аккуратно оформленный дайджест с главными фактами и ссылками на первоисточники.</div>
@@ -147,13 +148,12 @@
   <article class="project-card reveal" data-categories="analytics,n8n">
     <a class="card-media" href="../../projects/market-intelligence/index.html">
       <img src="../../assets/images/proj-analytics.jpg" alt="Market Intelligence — автоматическая аналитика рынка" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">Аналитика · n8n · Базы данных</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Аналитика · n8n · Базы данных</div>
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+      </div>
       <h3 class="card-title"><a href="../../projects/market-intelligence/index.html">Market Intelligence — автоматическая аналитика рынка</a></h3>
       <p class="card-problem">Отслеживать изменения на рынке, предложения конкурентов и новые тренды вручную долго — таблицы быстро устаревают, а важные сигналы замечаются слишком поздно.</p>
       <div class="card-benefit"><strong>Польза:</strong> Вся рыночная картина хранится в одном месте без ручного копирования, с историей изменений и готовой структурой для отчётов.</div>
@@ -169,13 +169,12 @@
   <article class="project-card reveal" data-categories="crm,n8n">
     <a class="card-media" href="../../projects/email-monitor/index.html">
       <img src="../../assets/images/proj-email.jpg" alt="Email Monitor — умный разбор входящей почты" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
-        
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">Заявки · n8n · Почта</div>
+      <div class="card-meta-row">
+        <div class="card-cat">Заявки · n8n · Почта</div>
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+      </div>
       <h3 class="card-title"><a href="../../projects/email-monitor/index.html">Email Monitor — умный разбор входящей почты</a></h3>
       <p class="card-problem">В рабочую почту одновременно падают заявки клиентов, уточнения, рассылки и уведомления — важные письма тонут в общем потоке, а сотрудники отвечают с задержкой.</p>
       <div class="card-benefit"><strong>Польза:</strong> Важные обращения сразу попадают в работу, не теряются среди информационных рассылок, а порядок обработки становится предсказуемым и прозрачным.</div>
@@ -200,15 +199,54 @@
   </main>
   
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Юрий Закусов</strong> · Автоматизация бизнеса, ИИ-агенты, Telegram-боты, n8n, CRM и Python
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="../../index.html">
+            <span class="brand-mark">ЮЗ</span>
+            <span>Юрий Закусов</span>
+          </a>
+          <p class="footer-about">Автоматизация бизнеса, ИИ-агенты, Telegram-боты, n8n, CRM и Python. Понятные решения без лишней сложности и скрытых условий.</p>
+          <a class="btn btn-coral btn-sm" href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg>
+            <span>Написать в Telegram</span>
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>Разделы сайта</h4>
+          <ul>
+            <li><a href="../../index.html">Главная</a></li>
+            <li><a href="../../index.html#portfolio">Мои работы</a></li>
+            <li><a href="../../index.html#services">Чем могу помочь</a></li>
+            <li><a href="../../index.html#process">Как я работаю</a></li>
+            <li><a href="../../index.html#about">Обо мне</a></li>
+            <li><a href="../../index.html#contact">Обсудить задачу</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Направления</h4>
+          <ul>
+            <li><a href="../../index.html#portfolio">ИИ-агенты и AIAA V47</a></li>
+            <li><a href="../../index.html#portfolio">Telegram-боты</a></li>
+            <li><a href="../../index.html#portfolio">Сценарии n8n и Make</a></li>
+            <li><a href="../../index.html#portfolio">CRM и обработка заявок</a></li>
+            <li><a href="../../index.html#portfolio">Python, API и таблицы</a></li>
+            <li><a href="../../index.html#portfolio">Современные сайты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты и площадки</h4>
+          <ul>
+            <li><a href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer">Telegram: @yury_zakusov</a></li>
+            <li><a href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Канал: t.me/integrator_raboty</a></li>
+            <li><a href="https://www.fl.ru/user/yuryzakusov78/portfolio/8111474/" target="_blank" rel="noopener noreferrer">Портфолио на FL.ru</a></li>
+            <li><a href="https://work-zilla.com/portfolio/eLAZvV" target="_blank" rel="noopener noreferrer">Профиль на Workzilla</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer">Telegram: @yury_zakusov</a>
-        <a href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Канал с работами</a>
-        <a href="https://www.fl.ru/user/yuryzakusov78/portfolio/8111474/" target="_blank" rel="noopener noreferrer">FL.ru</a>
-        <a href="https://work-zilla.com/portfolio/eLAZvV" target="_blank" rel="noopener noreferrer">Workzilla</a>
+      <div class="footer-bottom">
+        <div>© 2026 Юрий Закусов · Все работы подтверждены первоисточниками</div>
+        <a class="footer-top-link" href="#top">Наверх ↑</a>
       </div>
     </div>
   </footer>

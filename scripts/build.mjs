@@ -54,6 +54,7 @@ function renderHeader(basePrefix = '') {
         <span>${esc(site.brand.name)}</span>
       </a>
       <nav class="nav-links" aria-label="Основная навигация">
+        <a href="${basePrefix}index.html">Главная</a>
         <a href="${basePrefix}index.html#portfolio">Мои работы</a>
         <a href="${basePrefix}index.html#services">Чем могу помочь</a>
         <a href="${basePrefix}index.html#process">Как я работаю</a>
@@ -76,6 +77,7 @@ function renderHeader(basePrefix = '') {
     </div>
   </header>
   <div id="mobileMenu" class="mobile-menu" aria-label="Мобильное меню">
+    <a href="${basePrefix}index.html">Главная</a>
     <a href="${basePrefix}index.html#portfolio">Мои работы</a>
     <a href="${basePrefix}index.html#services">Чем могу помочь</a>
     <a href="${basePrefix}index.html#process">Как я работаю</a>
@@ -91,15 +93,54 @@ function renderHeader(basePrefix = '') {
 function renderFooter(basePrefix = '') {
   return `
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>${esc(site.brand.name)}</strong> · ${esc(site.brand.tagline)}
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="${basePrefix}index.html">
+            <span class="brand-mark">ЮЗ</span>
+            <span>${esc(site.brand.name)}</span>
+          </a>
+          <p class="footer-about">${esc(site.brand.tagline)}. Понятные решения без лишней сложности и скрытых условий.</p>
+          <a class="btn btn-coral btn-sm" href="${esc(site.brand.telegramUrl)}" target="_blank" rel="noopener noreferrer">
+            ${ICONS.telegram}
+            <span>Написать в Telegram</span>
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>Разделы сайта</h4>
+          <ul>
+            <li><a href="${basePrefix}index.html">Главная</a></li>
+            <li><a href="${basePrefix}index.html#portfolio">Мои работы</a></li>
+            <li><a href="${basePrefix}index.html#services">Чем могу помочь</a></li>
+            <li><a href="${basePrefix}index.html#process">Как я работаю</a></li>
+            <li><a href="${basePrefix}index.html#about">Обо мне</a></li>
+            <li><a href="${basePrefix}index.html#contact">Обсудить задачу</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Направления</h4>
+          <ul>
+            <li><a href="${basePrefix}index.html#portfolio">ИИ-агенты и AIAA V47</a></li>
+            <li><a href="${basePrefix}index.html#portfolio">Telegram-боты</a></li>
+            <li><a href="${basePrefix}index.html#portfolio">Сценарии n8n и Make</a></li>
+            <li><a href="${basePrefix}index.html#portfolio">CRM и обработка заявок</a></li>
+            <li><a href="${basePrefix}index.html#portfolio">Python, API и таблицы</a></li>
+            <li><a href="${basePrefix}index.html#portfolio">Современные сайты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты и площадки</h4>
+          <ul>
+            <li><a href="${esc(site.brand.telegramUrl)}" target="_blank" rel="noopener noreferrer">Telegram: ${esc(site.brand.telegramHandle)}</a></li>
+            <li><a href="${esc(site.brand.channelUrl)}" target="_blank" rel="noopener noreferrer">Канал: ${esc(site.brand.channelLabel)}</a></li>
+            <li><a href="${esc(site.brand.flUrl)}" target="_blank" rel="noopener noreferrer">Портфолио на FL.ru</a></li>
+            <li><a href="${esc(site.brand.workzillaUrl)}" target="_blank" rel="noopener noreferrer">Профиль на Workzilla</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="${esc(site.brand.telegramUrl)}" target="_blank" rel="noopener noreferrer">Telegram: ${esc(site.brand.telegramHandle)}</a>
-        <a href="${esc(site.brand.channelUrl)}" target="_blank" rel="noopener noreferrer">Канал с работами</a>
-        <a href="${esc(site.brand.flUrl)}" target="_blank" rel="noopener noreferrer">FL.ru</a>
-        <a href="${esc(site.brand.workzillaUrl)}" target="_blank" rel="noopener noreferrer">Workzilla</a>
+      <div class="footer-bottom">
+        <div>© 2026 ${esc(site.brand.name)} · Все работы подтверждены первоисточниками</div>
+        <a class="footer-top-link" href="#top">Наверх ↑</a>
       </div>
     </div>
   </footer>`;
@@ -131,19 +172,17 @@ function renderLayout({ title, description, bodyHtml, basePrefix = '' }) {
 
 function renderProjectCard(p, basePrefix = '', isFeatured = false) {
   const detailUrl = `${basePrefix}projects/${p.slug}/index.html`;
-  const hasScreens = p.realScreenshots && p.realScreenshots.length > 0;
   const cls = isFeatured ? 'featured-card' : 'project-card reveal';
   return `
   <article class="${cls}" data-categories="${esc(p.categories.join(','))}">
     <a class="card-media" href="${detailUrl}">
       <img src="${basePrefix}${esc(p.coverImage)}" alt="${esc(p.title)}" loading="lazy" width="640" height="400">
-      <div class="card-media-badges">
-        <span class="status-badge status-${esc(p.statusType)}">${esc(p.status)}</span>
-        ${hasScreens ? '<span class="screen-pill">Есть скриншоты</span>' : ''}
-      </div>
     </a>
     <div class="card-body">
-      <div class="card-cat">${esc(p.categoryLabel)}</div>
+      <div class="card-meta-row">
+        <div class="card-cat">${esc(p.categoryLabel)}</div>
+        <span class="status-badge status-${esc(p.statusType)}">${esc(p.status)}</span>
+      </div>
       <h3 class="card-title"><a href="${detailUrl}">${esc(p.title)}</a></h3>
       <p class="card-problem">${esc(p.problem)}</p>
       <div class="card-benefit"><strong>Польза:</strong> ${esc(p.benefit)}</div>
@@ -165,13 +204,17 @@ function buildHomePage() {
         <img src="${esc(s.image)}" alt="${esc(s.alt)}" ${idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
       </div>
       <div class="hero-scrim" aria-hidden="true"></div>
-      <div class="hero-content">
-        <div class="hero-badge"><span class="hero-badge-dot"></span>${esc(s.badge)}</div>
-        ${idx === 0 ? `<h1 class="hero-title">${esc(s.title)}</h1>` : `<h2 class="hero-title">${esc(s.title)}</h2>`}
-        <p class="hero-subtitle">${esc(s.subtitle)}</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы ${ICONS.arrowRight}</a>
-          <a class="btn btn-coral" href="#contact">${ICONS.telegram} Обсудить задачу</a>
+      <div class="hero-inner">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge"><span class="hero-badge-dot"></span>${esc(s.badge)}</div>
+            ${idx === 0 ? `<h1 class="hero-title">${esc(s.title)}</h1>` : `<h2 class="hero-title">${esc(s.title)}</h2>`}
+            <p class="hero-subtitle">${esc(s.subtitle)}</p>
+            <div class="hero-cta">
+              <a class="btn btn-coral" href="#portfolio">Посмотреть мои работы ${ICONS.arrowRight}</a>
+              <a class="btn btn-glass" href="#contact">${ICONS.telegram} Обсудить задачу</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>`).join('');
@@ -217,52 +260,50 @@ function buildHomePage() {
     </div>`).join('');
 
   const bodyHtml = `
-    <!-- 1. Главный экран -->
+    <!-- 1. Главный экран (полноширинный) -->
     <section class="hero-section" aria-label="Главный экран">
-      <div class="container">
-        <div id="heroStage" class="hero-stage" tabindex="0" aria-roledescription="carousel" aria-label="Направления работы">
-          <div class="hero-slides">
-            ${heroSlidesHtml}
-          </div>
-          <div class="hero-controls">
-            <div class="hero-dots" role="tablist" aria-label="Выбор слайда">
-              ${heroDotsHtml}
-            </div>
-            <div class="hero-nav-group">
-              <span id="heroCounter" class="hero-counter" aria-live="polite">1 / ${site.heroSlides.length}</span>
-              <button id="heroPlayPause" class="hero-icon-btn" type="button" aria-label="Поставить на паузу" data-state="playing">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
-              </button>
-              <button id="heroPrev" class="hero-icon-btn" type="button" aria-label="Предыдущий слайд">${ICONS.arrowLeft}</button>
-              <button id="heroNext" class="hero-icon-btn" type="button" aria-label="Следующий слайд">${ICONS.chevronRight}</button>
+      <div id="heroStage" class="hero-stage" tabindex="0" aria-roledescription="carousel" aria-label="Направления работы">
+        <div class="hero-slides">
+          ${heroSlidesHtml}
+        </div>
+        <div class="hero-controls-wrap">
+          <div class="container">
+            <div class="hero-controls">
+              <div class="hero-dots" role="tablist" aria-label="Выбор слайда">
+                ${heroDotsHtml}
+              </div>
+              <div class="hero-nav-group">
+                <span id="heroCounter" class="hero-counter" aria-live="polite">1 / ${site.heroSlides.length}</span>
+                <button id="heroPlayPause" class="hero-icon-btn" type="button" aria-label="Поставить на паузу" data-state="playing">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+                </button>
+                <button id="heroPrev" class="hero-icon-btn" type="button" aria-label="Предыдущий слайд">${ICONS.arrowLeft}</button>
+                <button id="heroNext" class="hero-icon-btn" type="button" aria-label="Следующий слайд">${ICONS.chevronRight}</button>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="facts-strip">
-          <div class="fact-card">
-            <div>
+      <div class="facts-bar">
+        <div class="container">
+          <div class="facts-strip">
+            <div class="fact-card">
               <div class="fact-num">${projects.length}</div>
               <div class="fact-label">Проверенных работ</div>
               <div class="fact-sub">Из канала t.me/integrator_raboty и архива V3</div>
             </div>
-          </div>
-          <div class="fact-card">
-            <div>
+            <div class="fact-card">
               <div class="fact-num">5</div>
               <div class="fact-label">Коммерческих кейсов</div>
               <div class="fact-sub">Обезличенные сценарии n8n, API, Supabase и ИИ</div>
             </div>
-          </div>
-          <div class="fact-card">
-            <div>
+            <div class="fact-card">
               <div class="fact-num">100%</div>
               <div class="fact-label">Честные статусы</div>
               <div class="fact-sub">Чётко разделяю коммерцию, личные проекты и демо</div>
             </div>
-          </div>
-          <div class="fact-card">
-            <div>
+            <div class="fact-card">
               <div class="fact-num">1–2 дня</div>
               <div class="fact-label">Быстрый пилот</div>
               <div class="fact-sub">Сначала проверяем задачу на малом объёме данных</div>
