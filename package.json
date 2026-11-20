@@ -1,0 +1,11 @@
+{
+  "name": "aiaa-portfolio-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Сайт-портфолио специалиста по автоматизации бизнеса, ИИ-агентам, Telegram-ботам, n8n, CRM и Python",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/preview.mjs",
+    "start": "npm run build && npm run preview"
+  }
+}

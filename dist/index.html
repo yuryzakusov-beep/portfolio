@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Юрий Закусов — Автоматизация бизнеса, ИИ-агенты, Telegram-боты, n8n, CRM и Python</title>
+  <meta name="description" content="Автоматизация бизнеса, ИИ-агенты, Telegram-боты, n8n, CRM и Python">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body id="top">
+  
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-logo" href="#top">
+        <span class="brand-mark">ЮЗ</span>
+        <span>Юрий Закусов</span>
+      </a>
+      <nav class="nav-links" aria-label="Основная навигация">
+        <a href="index.html#portfolio">Мои работы</a>
+        <a href="index.html#services">Чем могу помочь</a>
+        <a href="index.html#process">Как я работаю</a>
+        <a href="index.html#about">Обо мне</a>
+        <a href="index.html#contact">Обсудить задачу</a>
+      </nav>
+      <div class="header-actions">
+        <button id="motionToggle" class="motion-toggle" type="button" aria-pressed="false" title="Уменьшить анимацию">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 9v6"/><path d="M14 9v6"/></svg>
+          <span>Меньше анимации</span>
+        </button>
+        <a class="btn btn-primary btn-sm header-cta-desktop" href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg>
+          <span>Написать в Telegram</span>
+        </a>
+        <button id="burgerBtn" class="burger-btn" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div id="mobileMenu" class="mobile-menu" aria-label="Мобильное меню">
+    <a href="index.html#portfolio">Мои работы</a>
+    <a href="index.html#services">Чем могу помочь</a>
+    <a href="index.html#process">Как я работаю</a>
+    <a href="index.html#about">Обо мне</a>
+    <a href="index.html#contact">Обсудить задачу</a>
+    <a class="btn btn-primary" href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer" style="margin-top:8px;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg>
+      <span>Написать в Telegram (@yury_zakusov)</span>
+    </a>
+  </div>
+  <main>
+    
+    <!-- 1. Главный экран -->
+    <section class="hero-section" aria-label="Главный экран">
+      <div class="container">
+        <div id="heroStage" class="hero-stage" tabindex="0" aria-roledescription="carousel" aria-label="Направления работы">
+          <div class="hero-slides">
+            
+    <div class="hero-slide is-active" aria-hidden="false">
+      <div class="hero-media">
+        <img src="assets/images/hero-business.jpg" alt="Владелец бизнеса спокойно пьёт утренний кофе, пока заказы и задачи раскладываются автоматически" fetchpriority="high">
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge"><span class="hero-badge-dot"></span>Автоматизация бизнеса</div>
+        <h1 class="hero-title">Рутина работает сама, а вы занимаетесь развитием дела</h1>
+        <p class="hero-subtitle">Связываю таблицы, почту, CRM и мессенджеры так, чтобы заказы, отчёты и напоминания не требовали ручного переноса каждый день.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a class="btn btn-coral" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide " aria-hidden="true">
+      <div class="hero-media">
+        <img src="assets/images/hero-ai-agents.jpg" alt="Специалисты в светлой студии работают с понятными карточками сводок и задач" loading="lazy">
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge"><span class="hero-badge-dot"></span>ИИ-агенты</div>
+        <h2 class="hero-title">ИИ-помощники разбирают письма, сводки и тексты за минуты</h2>
+        <p class="hero-subtitle">Настраиваю понятные рабочие сценарии с языковыми моделями: утренние дайджесты, анализ источников, черновики ответов и контроль задач.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a class="btn btn-coral" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide " aria-hidden="true">
+      <div class="hero-media">
+        <img src="assets/images/hero-telegram-bots.jpg" alt="Клиент спокойно оформляет заявку в Telegram-боте вечером на смартфоне" loading="lazy">
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge"><span class="hero-badge-dot"></span>Telegram-боты</div>
+        <h2 class="hero-title">Клиенты пишут вечером — бот отвечает сразу и передаёт заявку</h2>
+        <p class="hero-subtitle">Запись на услугу, ответы на частые вопросы, сбор контактов и уведомление менеджеру прямо в Telegram — без потерянных обращений.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a class="btn btn-coral" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide " aria-hidden="true">
+      <div class="hero-media">
+        <img src="assets/images/hero-crm.jpg" alt="Менеджер работает с аккуратной канбан-доской заявок в CRM" loading="lazy">
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge"><span class="hero-badge-dot"></span>CRM и заявки</div>
+        <h2 class="hero-title">Ни одна заявка не теряется между сайтом, почтой и чатом</h2>
+        <p class="hero-subtitle">Собираю обращения в единую воронку, проверяю дубли, обновляю карточки и мгновенно сообщаю ответственному о новом клиенте.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a class="btn btn-coral" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide " aria-hidden="true">
+      <div class="hero-media">
+        <img src="assets/images/hero-python.svg" alt="Разрозненные файлы и данные автоматически превращаются в чистую проверенную таблицу" loading="lazy">
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge"><span class="hero-badge-dot"></span>Python-автоматизация</div>
+        <h2 class="hero-title">Python забирает на себя скучную работу с файлами, API и таблицами</h2>
+        <p class="hero-subtitle">Импорт заказов из API, проверка тысяч документов, сверка PDF/DXF и чистые таблицы для Excel без ручного копирования и случайных ошибок.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a class="btn btn-coral" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide " aria-hidden="true">
+      <div class="hero-media">
+        <img src="assets/images/hero-websites.jpg" alt="Предприниматель показывает клиенту современный адаптивный сайт на ноутбуке и телефоне" loading="lazy">
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge"><span class="hero-badge-dot"></span>Современные сайты</div>
+        <h2 class="hero-title">Лёгкие и понятные сайты, с которых удобно оставить заявку</h2>
+        <p class="hero-subtitle">Делаю аккуратные адаптивные сайты для бизнеса и специалистов: быстро открываются на телефоне и сразу приводят в Telegram или CRM.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#portfolio">Посмотреть мои работы <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a class="btn btn-coral" href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Обсудить задачу</a>
+        </div>
+      </div>
+    </div>
+          </div>
+          <div class="hero-controls">
+            <div class="hero-dots" role="tablist" aria-label="Выбор слайда">
+              
+    <button class="hero-dot is-active" type="button" aria-label="Слайд 1: Автоматизация бизнеса" aria-current="true">
+      <span class="hero-dot-progress"></span>
+    </button>
+    <button class="hero-dot " type="button" aria-label="Слайд 2: ИИ-агенты" aria-current="false">
+      <span class="hero-dot-progress"></span>
+    </button>
+    <button class="hero-dot " type="button" aria-label="Слайд 3: Telegram-боты" aria-current="false">
+      <span class="hero-dot-progress"></span>
+    </button>
+    <button class="hero-dot " type="button" aria-label="Слайд 4: CRM и заявки" aria-current="false">
+      <span class="hero-dot-progress"></span>
+    </button>
+    <button class="hero-dot " type="button" aria-label="Слайд 5: Python-автоматизация" aria-current="false">
+      <span class="hero-dot-progress"></span>
+    </button>
+    <button class="hero-dot " type="button" aria-label="Слайд 6: Современные сайты" aria-current="false">
+      <span class="hero-dot-progress"></span>
+    </button>
+            </div>
+            <div class="hero-nav-group">
+              <span id="heroCounter" class="hero-counter" aria-live="polite">1 / 6</span>
+              <button id="heroPlayPause" class="hero-icon-btn" type="button" aria-label="Поставить на паузу" data-state="playing">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+              </button>
+              <button id="heroPrev" class="hero-icon-btn" type="button" aria-label="Предыдущий слайд"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+              <button id="heroNext" class="hero-icon-btn" type="button" aria-label="Следующий слайд"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="facts-strip">
+          <div class="fact-card">
+            <div>
+              <div class="fact-num">15</div>
+              <div class="fact-label">Проверенных работ</div>
+              <div class="fact-sub">Из канала t.me/integrator_raboty и архива V3</div>
+            </div>
+          </div>
+          <div class="fact-card">
+            <div>
+              <div class="fact-num">5</div>
+              <div class="fact-label">Коммерческих кейсов</div>
+              <div class="fact-sub">Обезличенные сценарии n8n, API, Supabase и ИИ</div>
+            </div>
+          </div>
+          <div class="fact-card">
+            <div>
+              <div class="fact-num">100%</div>
+              <div class="fact-label">Честные статусы</div>
+              <div class="fact-sub">Чётко разделяю коммерцию, личные проекты и демо</div>
+            </div>
+          </div>
+          <div class="fact-card">
+            <div>
+              <div class="fact-num">1–2 дня</div>
+              <div class="fact-label">Быстрый пилот</div>
+              <div class="fact-sub">Сначала проверяем задачу на малом объёме данных</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Избранные работы (Карусель) -->
+    <section class="section" aria-label="Избранные проекты">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Избранное</div>
+            <h2 class="section-title">Ключевые работы и прототипы</h2>
+            <p class="section-desc">Листайте подборку вправо или откройте любой проект, чтобы посмотреть разбор задачи, результат и реальные скриншоты.</p>
+          </div>
+          <div class="carousel-controls">
+            <button id="featuredPrev" class="hero-icon-btn" type="button" aria-label="Прокрутить назад"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+            <button id="featuredNext" class="hero-icon-btn" type="button" aria-label="Прокрутить вперёд"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+          </div>
+        </div>
+        <div id="featuredTrack" class="carousel-track">
+          
+  <article class="featured-card" data-categories="ai-agents,python,telegram,crm">
+    <a class="card-media" href="projects/aiaa-v47/index.html">
+      <img src="assets/images/hero-ai-agents.jpg" alt="AIAA V47 — собственная система AI-автоматизации" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-own">Собственная разработка</span>
+        <span class="screen-pill">Есть скриншоты</span>
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">ИИ-агенты · Python · Telegram</div>
+      <h3 class="card-title"><a href="projects/aiaa-v47/index.html">AIAA V47 — собственная система AI-автоматизации</a></h3>
+      <p class="card-problem">Когда мониторинг площадок, разбор входящих задач и контроль действий делаются вручную в десятках вкладок, быстро накапливается усталость, теряются важные запросы и легко случайно отправить дубль.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Все шаги прозрачно фиксируются: видно, что именно прочитано, что отфильтровано и какие действия прошли проверку. Например, сборщик стабильно проходит 31 из 31 подключённого Telegram-источника за один цикл без ручного обхода.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">Python</span><span class="stack-tag">Telegram API</span><span class="stack-tag">SQLite</span><span class="stack-tag">Linux/VPS</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/aiaa-v47/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/93" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="featured-card" data-categories="ai-agents,n8n,analytics">
+    <a class="card-media" href="projects/pis-daily-briefing/index.html">
+      <img src="assets/images/proj-digest.jpg" alt="PIS Daily Briefing — утренний AI-дайджест для команды" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">ИИ-агенты · n8n · Аналитика</div>
+      <h3 class="card-title"><a href="projects/pis-daily-briefing/index.html">PIS Daily Briefing — утренний AI-дайджест для команды</a></h3>
+      <p class="card-problem">Утром руководителю и команде приходится вручную просматривать десятки сообщений, отчётов и внешних источников, чтобы понять, что важного произошло за сутки.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Вместо долгого чтения разрозненных лент команда получает короткий, аккуратно оформленный дайджест с главными фактами и ссылками на первоисточники.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">n8n</span><span class="stack-tag">AI / LLM</span><span class="stack-tag">REST API</span><span class="stack-tag">Документация</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/pis-daily-briefing/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="featured-card" data-categories="analytics,n8n">
+    <a class="card-media" href="projects/market-intelligence/index.html">
+      <img src="assets/images/proj-analytics.jpg" alt="Market Intelligence — автоматическая аналитика рынка" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Аналитика · n8n · Базы данных</div>
+      <h3 class="card-title"><a href="projects/market-intelligence/index.html">Market Intelligence — автоматическая аналитика рынка</a></h3>
+      <p class="card-problem">Отслеживать изменения на рынке, предложения конкурентов и новые тренды вручную долго — таблицы быстро устаревают, а важные сигналы замечаются слишком поздно.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Вся рыночная картина хранится в одном месте без ручного копирования, с историей изменений и готовой структурой для отчётов.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">n8n</span><span class="stack-tag">Apify</span><span class="stack-tag">Supabase</span><span class="stack-tag">JSON</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/market-intelligence/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="featured-card" data-categories="crm,n8n">
+    <a class="card-media" href="projects/kanban-automation/index.html">
+      <img src="assets/images/proj-kanban.jpg" alt="Kanban Automation — синхронизация задач через Webhook и Supabase" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">CRM · n8n · Webhook</div>
+      <h3 class="card-title"><a href="projects/kanban-automation/index.html">Kanban Automation — синхронизация задач через Webhook и Supabase</a></h3>
+      <p class="card-problem">Когда задачи ведутся в одной системе, а база клиентов или статусы — в другой, команде приходится переносить изменения руками. Из-за этого возникают расхождения и забытые статусы.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Карточки обновляются согласованно без двойного ввода данных, а команда видит актуальный статус каждой задачи.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">n8n</span><span class="stack-tag">Supabase</span><span class="stack-tag">Webhooks</span><span class="stack-tag">JSON</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/kanban-automation/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="featured-card" data-categories="python,analytics">
+    <a class="card-media" href="projects/python-api-orders-csv/index.html">
+      <img src="assets/images/hero-python.svg" alt="Python: импорт заказов из API в CSV без дублей" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-prototype">Проверенный прототип (4/4 теста)</span>
+        <span class="screen-pill">Есть скриншоты</span>
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Python · API · Таблицы</div>
+      <h3 class="card-title"><a href="projects/python-api-orders-csv/index.html">Python: импорт заказов из API в CSV без дублей</a></h3>
+      <p class="card-problem">При выгрузке заказов из интернет-магазина или CRM через API часто случаются сбои сети, повторяющиеся ID и «битые» суммы, из-за которых ломается итоговая таблица для бухгалтерии.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Даже при повторном запуске файл остаётся абсолютно тем же (подтверждено сверкой SHA256), а при ошибке старая таблица не портится. Пройдено 4 из 4 модульных тестов.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">Python</span><span class="stack-tag">HTTP API</span><span class="stack-tag">JSON</span><span class="stack-tag">Decimal</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/python-api-orders-csv/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/91" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="featured-card" data-categories="sites">
+    <a class="card-media" href="projects/site-domlad/index.html">
+      <img src="assets/images/hero-websites.jpg" alt="Адаптивный сайт-визитка «ДомЛад»" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-demo">Демонстрация</span>
+        <span class="screen-pill">Есть скриншоты</span>
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Сайты · Адаптивная вёрстка</div>
+      <h3 class="card-title"><a href="projects/site-domlad/index.html">Адаптивный сайт-визитка «ДомЛад»</a></h3>
+      <p class="card-problem">Небольшой компании часто нужен понятный, быстрый и аккуратный сайт, который одинаково хорошо открывается на смартфоне и компьютере, без тяжёлых конструкторов и лишней перегруженности.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Мгновенная загрузка, чистая структура услуг и проверенное отображение на узких экранах (390 px) без съехавших блоков.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">HTML5</span><span class="stack-tag">CSS3</span><span class="stack-tag">JavaScript</span><span class="stack-tag">Адаптивный дизайн</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/site-domlad/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/90" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="featured-card" data-categories="telegram,ai-agents,crm,n8n">
+    <a class="card-media" href="projects/telegram-crm-support-bot/index.html">
+      <img src="assets/images/hero-telegram-bots.jpg" alt="Умный AI-ассистент поддержки клиентов в Telegram с CRM-ядром" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Telegram · ИИ-агенты · CRM</div>
+      <h3 class="card-title"><a href="projects/telegram-crm-support-bot/index.html">Умный AI-ассистент поддержки клиентов в Telegram с CRM-ядром</a></h3>
+      <p class="card-problem">Клиенты задают однотипные вопросы в Telegram в любое время суток, а менеджеры тратят полдня на повторяющиеся ответы и ручное занесение контактов в базу.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Быстрые ответы клиентам без ожидания и аккуратная история обращений в одном месте.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">Telegram Bot</span><span class="stack-tag">n8n</span><span class="stack-tag">LLM</span><span class="stack-tag">CRM</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/telegram-crm-support-bot/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/67" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Мои работы (Полная галерея с фильтрами) -->
+    <section id="portfolio" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Портфолио</div>
+            <h2 class="section-title">Мои работы по направлениям</h2>
+            <p class="section-desc">Каждый проект открывается на отдельной странице с подробным разбором «проблема → решение → польза», честным статусом и ссылкой на первоисточник.</p>
+          </div>
+          <a class="btn btn-outline btn-sm" href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">
+            Весь архив в Telegram <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Фильтр проектов по направлениям">
+          
+    <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">
+      <span>Все работы</span>
+      <span class="filter-count">15</span>
+    </button>
+    <button class="filter-btn " type="button" data-filter="ai-agents" aria-pressed="false">
+      <span>ИИ-агенты</span>
+      <span class="filter-count">5</span>
+    </button>
+    <button class="filter-btn " type="button" data-filter="telegram" aria-pressed="false">
+      <span>Telegram-боты</span>
+      <span class="filter-count">4</span>
+    </button>
+    <button class="filter-btn " type="button" data-filter="n8n" aria-pressed="false">
+      <span>n8n и Make</span>
+      <span class="filter-count">9</span>
+    </button>
+    <button class="filter-btn " type="button" data-filter="crm" aria-pressed="false">
+      <span>CRM и заявки</span>
+      <span class="filter-count">6</span>
+    </button>
+    <button class="filter-btn " type="button" data-filter="python" aria-pressed="false">
+      <span>Python</span>
+      <span class="filter-count">4</span>
+    </button>
+    <button class="filter-btn " type="button" data-filter="analytics" aria-pressed="false">
+      <span>Аналитика</span>
+      <span class="filter-count">7</span>
+    </button>
+    <button class="filter-btn " type="button" data-filter="sites" aria-pressed="false">
+      <span>Сайты</span>
+      <span class="filter-count">1</span>
+    </button>
+        </div>
+
+        <div class="projects-grid">
+          
+  <article class="project-card reveal" data-categories="ai-agents,python,telegram,crm">
+    <a class="card-media" href="projects/aiaa-v47/index.html">
+      <img src="assets/images/hero-ai-agents.jpg" alt="AIAA V47 — собственная система AI-автоматизации" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-own">Собственная разработка</span>
+        <span class="screen-pill">Есть скриншоты</span>
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">ИИ-агенты · Python · Telegram</div>
+      <h3 class="card-title"><a href="projects/aiaa-v47/index.html">AIAA V47 — собственная система AI-автоматизации</a></h3>
+      <p class="card-problem">Когда мониторинг площадок, разбор входящих задач и контроль действий делаются вручную в десятках вкладок, быстро накапливается усталость, теряются важные запросы и легко случайно отправить дубль.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Все шаги прозрачно фиксируются: видно, что именно прочитано, что отфильтровано и какие действия прошли проверку. Например, сборщик стабильно проходит 31 из 31 подключённого Telegram-источника за один цикл без ручного обхода.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">Python</span><span class="stack-tag">Telegram API</span><span class="stack-tag">SQLite</span><span class="stack-tag">Linux/VPS</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/aiaa-v47/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/93" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="ai-agents,n8n,analytics">
+    <a class="card-media" href="projects/pis-daily-briefing/index.html">
+      <img src="assets/images/proj-digest.jpg" alt="PIS Daily Briefing — утренний AI-дайджест для команды" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">ИИ-агенты · n8n · Аналитика</div>
+      <h3 class="card-title"><a href="projects/pis-daily-briefing/index.html">PIS Daily Briefing — утренний AI-дайджест для команды</a></h3>
+      <p class="card-problem">Утром руководителю и команде приходится вручную просматривать десятки сообщений, отчётов и внешних источников, чтобы понять, что важного произошло за сутки.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Вместо долгого чтения разрозненных лент команда получает короткий, аккуратно оформленный дайджест с главными фактами и ссылками на первоисточники.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">n8n</span><span class="stack-tag">AI / LLM</span><span class="stack-tag">REST API</span><span class="stack-tag">Документация</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/pis-daily-briefing/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="analytics,n8n">
+    <a class="card-media" href="projects/market-intelligence/index.html">
+      <img src="assets/images/proj-analytics.jpg" alt="Market Intelligence — автоматическая аналитика рынка" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Аналитика · n8n · Базы данных</div>
+      <h3 class="card-title"><a href="projects/market-intelligence/index.html">Market Intelligence — автоматическая аналитика рынка</a></h3>
+      <p class="card-problem">Отслеживать изменения на рынке, предложения конкурентов и новые тренды вручную долго — таблицы быстро устаревают, а важные сигналы замечаются слишком поздно.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Вся рыночная картина хранится в одном месте без ручного копирования, с историей изменений и готовой структурой для отчётов.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">n8n</span><span class="stack-tag">Apify</span><span class="stack-tag">Supabase</span><span class="stack-tag">JSON</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/market-intelligence/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="crm,n8n">
+    <a class="card-media" href="projects/email-monitor/index.html">
+      <img src="assets/images/proj-email.jpg" alt="Email Monitor — умный разбор входящей почты" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Заявки · n8n · Почта</div>
+      <h3 class="card-title"><a href="projects/email-monitor/index.html">Email Monitor — умный разбор входящей почты</a></h3>
+      <p class="card-problem">В рабочую почту одновременно падают заявки клиентов, уточнения, рассылки и уведомления — важные письма тонут в общем потоке, а сотрудники отвечают с задержкой.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Важные обращения сразу попадают в работу, не теряются среди информационных рассылок, а порядок обработки становится предсказуемым и прозрачным.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">n8n</span><span class="stack-tag">Email / IMAP</span><span class="stack-tag">JSON</span><span class="stack-tag">Документация</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/email-monitor/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="crm,n8n">
+    <a class="card-media" href="projects/kanban-automation/index.html">
+      <img src="assets/images/proj-kanban.jpg" alt="Kanban Automation — синхронизация задач через Webhook и Supabase" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">CRM · n8n · Webhook</div>
+      <h3 class="card-title"><a href="projects/kanban-automation/index.html">Kanban Automation — синхронизация задач через Webhook и Supabase</a></h3>
+      <p class="card-problem">Когда задачи ведутся в одной системе, а база клиентов или статусы — в другой, команде приходится переносить изменения руками. Из-за этого возникают расхождения и забытые статусы.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Карточки обновляются согласованно без двойного ввода данных, а команда видит актуальный статус каждой задачи.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">n8n</span><span class="stack-tag">Supabase</span><span class="stack-tag">Webhooks</span><span class="stack-tag">JSON</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/kanban-automation/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="analytics,n8n">
+    <a class="card-media" href="projects/social-monitor/index.html">
+      <img src="assets/images/proj-social.jpg" alt="Social Monitor — мониторинг социальных источников" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-commercial">Коммерческий кейс (обезличен)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Аналитика · n8n · Соцсети</div>
+      <h3 class="card-title"><a href="projects/social-monitor/index.html">Social Monitor — мониторинг социальных источников</a></h3>
+      <p class="card-problem">Вручную проверять упоминания, новые публикации и активность в социальных источниках неудобно — легко пропустить важный инфоповод или обсуждение.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Новые публикации и сигналы собираются регулярно в единый поток, который удобно просматривать и анализировать команде.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">n8n</span><span class="stack-tag">API</span><span class="stack-tag">Социальные источники</span><span class="stack-tag">Документация</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/social-monitor/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="python,analytics">
+    <a class="card-media" href="projects/python-api-orders-csv/index.html">
+      <img src="assets/images/hero-python.svg" alt="Python: импорт заказов из API в CSV без дублей" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-prototype">Проверенный прототип (4/4 теста)</span>
+        <span class="screen-pill">Есть скриншоты</span>
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Python · API · Таблицы</div>
+      <h3 class="card-title"><a href="projects/python-api-orders-csv/index.html">Python: импорт заказов из API в CSV без дублей</a></h3>
+      <p class="card-problem">При выгрузке заказов из интернет-магазина или CRM через API часто случаются сбои сети, повторяющиеся ID и «битые» суммы, из-за которых ломается итоговая таблица для бухгалтерии.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Даже при повторном запуске файл остаётся абсолютно тем же (подтверждено сверкой SHA256), а при ошибке старая таблица не портится. Пройдено 4 из 4 модульных тестов.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">Python</span><span class="stack-tag">HTTP API</span><span class="stack-tag">JSON</span><span class="stack-tag">Decimal</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/python-api-orders-csv/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/91" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="python,analytics">
+    <a class="card-media" href="projects/python-html-catalog-csv/index.html">
+      <img src="assets/images/hero-python.svg" alt="Python: каталог HTML-файлов в таблицу CSV с контролем SHA256" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-prototype">Проверенный прототип (5/5 тестов)</span>
+        <span class="screen-pill">Есть скриншоты</span>
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Python · Обработка файлов</div>
+      <h3 class="card-title"><a href="projects/python-html-catalog-csv/index.html">Python: каталог HTML-файлов в таблицу CSV с контролем SHA256</a></h3>
+      <p class="card-problem">Когда нужно разобрать большой архив HTML-документов и собрать по ним единый реестр для Excel, ручная работа невозможна, а простой скрипт может пропустить дубли или сломать ячейки Excel формулами.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Чистая таблица с точным контролем каждого файла и безопасным повторным запуском. Все 5 из 5 модульных тестов пройдены.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">Python</span><span class="stack-tag">CSV (UTF-8 BOM)</span><span class="stack-tag">SHA256</span><span class="stack-tag">Excel Guard</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/python-html-catalog-csv/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/92" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="sites">
+    <a class="card-media" href="projects/site-domlad/index.html">
+      <img src="assets/images/hero-websites.jpg" alt="Адаптивный сайт-визитка «ДомЛад»" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-demo">Демонстрация</span>
+        <span class="screen-pill">Есть скриншоты</span>
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Сайты · Адаптивная вёрстка</div>
+      <h3 class="card-title"><a href="projects/site-domlad/index.html">Адаптивный сайт-визитка «ДомЛад»</a></h3>
+      <p class="card-problem">Небольшой компании часто нужен понятный, быстрый и аккуратный сайт, который одинаково хорошо открывается на смартфоне и компьютере, без тяжёлых конструкторов и лишней перегруженности.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Мгновенная загрузка, чистая структура услуг и проверенное отображение на узких экранах (390 px) без съехавших блоков.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">HTML5</span><span class="stack-tag">CSS3</span><span class="stack-tag">JavaScript</span><span class="stack-tag">Адаптивный дизайн</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/site-domlad/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/90" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="crm">
+    <a class="card-media" href="projects/crm-leads-demo/index.html">
+      <img src="assets/images/hero-crm.jpg" alt="Демо обработки входящих заявок и маршрутизации в CRM" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-demo">Демонстрация</span>
+        <span class="screen-pill">Есть скриншоты</span>
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">CRM · Автоматизация заявок</div>
+      <h3 class="card-title"><a href="projects/crm-leads-demo/index.html">Демо обработки входящих заявок и маршрутизации в CRM</a></h3>
+      <p class="card-problem">Когда заявки приходят с формы сайта, звонка или мессенджера без единого маршрута, менеджеры создают дубли карточек или забывают перезвонить клиенту.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Понятная архитектура обработки заявок, которую можно быстро перенести на реальную CRM заказчика (Bitrix24, amoCRM, Supabase или Google Таблицы).</div>
+      <div class="stack-tags">
+        <span class="stack-tag">CRM</span><span class="stack-tag">Webhooks</span><span class="stack-tag">API</span><span class="stack-tag">Дедупликация</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/crm-leads-demo/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/94" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="python,analytics">
+    <a class="card-media" href="projects/python-pdf-dxf-check/index.html">
+      <img src="assets/images/hero-python.svg" alt="Python: автоматическая проверка файлов PDF и DXF" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-demo">Демонстрация</span>
+        <span class="screen-pill">Есть скриншоты</span>
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Python · Документы и чертежи</div>
+      <h3 class="card-title"><a href="projects/python-pdf-dxf-check/index.html">Python: автоматическая проверка файлов PDF и DXF</a></h3>
+      <p class="card-problem">В инженерных и производственных задачах ручная проверка комплектности и параметров десятков файлов PDF и DXF отнимает много времени и чревата пропуском мелких несоответствий.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Экономит время инженера или менеджера на первичной проверке комплекта документов перед передачей в работу.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">Python</span><span class="stack-tag">PDF</span><span class="stack-tag">DXF</span><span class="stack-tag">Автопроверка</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/python-pdf-dxf-check/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/94" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="telegram,ai-agents,crm,n8n">
+    <a class="card-media" href="projects/telegram-crm-support-bot/index.html">
+      <img src="assets/images/hero-telegram-bots.jpg" alt="Умный AI-ассистент поддержки клиентов в Telegram с CRM-ядром" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Telegram · ИИ-агенты · CRM</div>
+      <h3 class="card-title"><a href="projects/telegram-crm-support-bot/index.html">Умный AI-ассистент поддержки клиентов в Telegram с CRM-ядром</a></h3>
+      <p class="card-problem">Клиенты задают однотипные вопросы в Telegram в любое время суток, а менеджеры тратят полдня на повторяющиеся ответы и ручное занесение контактов в базу.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Быстрые ответы клиентам без ожидания и аккуратная история обращений в одном месте.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">Telegram Bot</span><span class="stack-tag">n8n</span><span class="stack-tag">LLM</span><span class="stack-tag">CRM</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/telegram-crm-support-bot/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/67" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="telegram,ai-agents,n8n,crm">
+    <a class="card-media" href="projects/telegram-doctor-booking/index.html">
+      <img src="assets/images/proj-telegram-bot.jpg" alt="ИИ-помощник записи на приём через Telegram и Google Таблицы" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">Telegram · Запись клиентов · n8n</div>
+      <h3 class="card-title"><a href="projects/telegram-doctor-booking/index.html">ИИ-помощник записи на приём через Telegram и Google Таблицы</a></h3>
+      <p class="card-problem">Администраторы клиник, салонов и студий постоянно отвлекаются на переписки в мессенджере, чтобы подобрать свободное окно и внести клиента в расписание.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Клиент записывается сам за пару сообщений, а расписание в таблице всегда остаётся актуальным без лишних звонков.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">Telegram Bot</span><span class="stack-tag">n8n</span><span class="stack-tag">Google Sheets</span><span class="stack-tag">AI</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/telegram-doctor-booking/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/57" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="telegram,n8n">
+    <a class="card-media" href="projects/n8n-rss-telegram-monitor/index.html">
+      <img src="assets/images/proj-email.jpg" alt="Автопоиск вакансий и заказов: RSS → Telegram без дублей" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">n8n · Telegram · Мониторинг</div>
+      <h3 class="card-title"><a href="projects/n8n-rss-telegram-monitor/index.html">Автопоиск вакансий и заказов: RSS → Telegram без дублей</a></h3>
+      <p class="card-problem">Чтобы не упустить нужную вакансию или свежий заказ, приходится по пять раз в день вручную обновлять десятки сайтов и пролистывать одно и то же.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Вы узнаёте о подходящих запросах первым и не тратите время на ручную проверку лент.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">n8n</span><span class="stack-tag">RSS</span><span class="stack-tag">Telegram</span><span class="stack-tag">Фильтрация</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/n8n-rss-telegram-monitor/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/75" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card reveal" data-categories="ai-agents,n8n,analytics">
+    <a class="card-media" href="projects/trend2content-ai-sheets/index.html">
+      <img src="assets/images/proj-social.jpg" alt="Trend2Content: сбор трендов соцсетей → идеи постов в Google Таблицы" loading="lazy" width="640" height="400">
+      <div class="card-media-badges">
+        <span class="status-badge status-template">Рабочий шаблон (n8n)</span>
+        
+      </div>
+    </a>
+    <div class="card-body">
+      <div class="card-cat">ИИ-агенты · n8n · Аналитика</div>
+      <h3 class="card-title"><a href="projects/trend2content-ai-sheets/index.html">Trend2Content: сбор трендов соцсетей → идеи постов в Google Таблицы</a></h3>
+      <p class="card-problem">Экспертам и маркетологам сложно каждую неделю придумывать актуальные темы для постов — поиск трендов и составление таблицы идей отнимают часы.</p>
+      <div class="card-benefit"><strong>Польза:</strong> Вместо пустого листа вы получаете структурированную таблицу идей на основе живых обсуждений — остаётся только выбрать лучшие и опубликовать.</div>
+      <div class="stack-tags">
+        <span class="stack-tag">n8n</span><span class="stack-tag">Gemini</span><span class="stack-tag">Apify</span><span class="stack-tag">Google Sheets</span>
+      </div>
+      <div class="card-footer">
+        <a class="card-link-main" href="projects/trend2content-ai-sheets/index.html">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="card-link-source" href="https://t.me/integrator_raboty/85" target="_blank" rel="noopener noreferrer">Источник <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+    </div>
+  </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Чем могу помочь -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Услуги</div>
+            <h2 class="section-title">Чем могу помочь вашему делу</h2>
+            <p class="section-desc">Без сложных слов: просто покажите, на что у вас каждый день уходит больше всего времени, и мы соберём аккуратное решение.</p>
+          </div>
+        </div>
+        <div class="services-grid">
+          
+    <article class="service-card reveal">
+      <div class="service-icon accent-sky"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/></svg></div>
+      <h3 class="service-title">Telegram-боты для клиентов и команды</h3>
+      <p class="service-problem">Клиенты пишут вечером или в выходные, а отвечать некому?</p>
+      <p class="service-desc">Соберу бота, который вежливо примет заявку, задаст нужные вопросы, запишет клиента в таблицу или CRM и сразу пришлёт уведомление менеджеру.</p>
+    </article>
+    <article class="service-card reveal">
+      <div class="service-icon accent-coral"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="6" height="6" rx="1.5"/><rect x="15" y="3" width="6" height="6" rx="1.5"/><rect x="9" y="15" width="6" height="6" rx="1.5"/><path d="M6 9v2a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9"/><path d="M12 13v2"/></svg></div>
+      <h3 class="service-title">Связки n8n, Make и API-интеграции</h3>
+      <p class="service-problem">Приходится вручную переносить данные из почты в CRM и обратно?</p>
+      <p class="service-desc">Настрою надёжные сценарии между вашими сервисами: сайт, почта, Google Таблицы, Supabase, Notion, Telegram и CRM работают как единый механизм.</p>
+    </article>
+    <article class="service-card reveal">
+      <div class="service-icon accent-indigo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z"/></svg></div>
+      <h3 class="service-title">ИИ-агенты под реальные задачи</h3>
+      <p class="service-problem">Тратите часы на чтение отчётов, писем и разбор новостей рынка?</p>
+      <p class="service-desc">Подключу ИИ для конкретной пользы: утренние выжимки для руководителя, сортировка входящих писем, черновики ответов и структурирование данных.</p>
+    </article>
+    <article class="service-card reveal">
+      <div class="service-icon accent-emerald"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg></div>
+      <h3 class="service-title">Python-скрипты для таблиц, файлов и API</h3>
+      <p class="service-problem">Нужно обработать сотни файлов, сверить заказы или убрать дубли?</p>
+      <p class="service-desc">Напишу аккуратный скрипт с тестами, защитой от сбоев и понятным отчётом. Запустили — получили готовую чистую таблицу для Excel или CRM.</p>
+    </article>
+    <article class="service-card reveal">
+      <div class="service-icon accent-amber"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/><path d="M15 4v16"/></svg></div>
+      <h3 class="service-title">Порядок в заявках и CRM</h3>
+      <p class="service-problem">Заявки приходят из разных мест и часть просто забывается?</p>
+      <p class="service-desc">Настрою приём обращений, проверку дублей, автоматическую постановку задач и контроль статусов, чтобы каждый клиент получил ответ вовремя.</p>
+    </article>
+    <article class="service-card reveal">
+      <div class="service-icon accent-teal"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8"/><path d="M3.6 15h16.8"/><path d="M12 3a14 14 0 0 0 0 18"/><path d="M12 3a14 14 0 0 1 0 18"/></svg></div>
+      <h3 class="service-title">Сайты-визитки и лендинги с интеграцией</h3>
+      <p class="service-problem">Нужен светлый современный сайт, который быстро работает на телефоне?</p>
+      <p class="service-desc">Сделаю адаптивный сайт под вашу задачу и свяжу его с Telegram или CRM, чтобы посетители сразу понимали, чем вы полезны, и легко писали вам.</p>
+    </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Как я работаю -->
+    <section id="process" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Порядок работы</div>
+            <h2 class="section-title">Как мы приходим к результату</h2>
+            <p class="section-desc">Простой и понятный маршрут: без сюрпризов, лишней переплаты и долгих переписок.</p>
+          </div>
+        </div>
+        <div class="process-grid">
+          
+    <article class="process-card reveal">
+      <div class="process-step">01</div>
+      <h3>Разбираем задачу простыми словами</h3>
+      <p>Вы рассказываете в Telegram, что сейчас отнимает время или работает неудобно. Без сложных терминов определяем, что именно нужно получить в итоге.</p>
+    </article>
+    <article class="process-card reveal">
+      <div class="process-step">02</div>
+      <h3>Проверяем доступы и делаем небольшой пилот</h3>
+      <p>Сначала проверяем реальные данные, API и права доступа. Для сложных задач запускаем короткий проверяемый этап на тестовом примере.</p>
+    </article>
+    <article class="process-card reveal">
+      <div class="process-step">03</div>
+      <h3>Собираю решение и тестирую на сбоях</h3>
+      <p>Предусматриваю защиту от дублей, ошибок сети и некорректных данных. Показываю живой результат, а не просто обещания на словах.</p>
+    </article>
+    <article class="process-card reveal">
+      <div class="process-step">04</div>
+      <h3>Передаю работу с понятной инструкцией</h3>
+      <p>Вы получаете работающий сценарий, код или сайт, короткую инструкцию по использованию и поддержку на старте.</p>
+    </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Обо мне -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Обо мне</div>
+            <h2 class="section-title">Делаю автоматизацию так, чтобы она реально облегчала работу, а не усложняла её</h2>
+          </div>
+        </div>
+        <div class="about-layout reveal">
+          <div class="about-text">
+            <p class="about-lead">Меня зовут Юрий. Я занимаюсь автоматизацией рабочих процессов, разработкой на Python, ИИ-агентами, Telegram-ботами, сценариями в n8n и аккуратными сайтами.</p>
+            <p>В работе придерживаюсь простого правила: сначала понять, какая реальная проблема болит у человека или команды, и только потом подбирать инструмент. Иногда задачу решает короткий Python-скрипт за вечер, а иногда нужна связка из n8n, базы данных и Telegram-бота.</p><p>Я честно разделяю коммерческий опыт, собственные разработки и учебные прототипы. Не рисую выдуманных отзывов и не обещаю «магию за один клик» — вместо этого показываю реальные схемы, код, тесты и поэтапный план запуска.</p><p>Все актуальные наработки, демонстрации и технические разборы я открыто публикую в своём Telegram-канале «Интегратор мои работы».</p>
+            <div class="about-links">
+              <a class="btn btn-primary btn-sm" href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Канал «Интегратор мои работы»
+              </a>
+              <a class="btn btn-outline btn-sm" href="https://www.fl.ru/user/yuryzakusov78/portfolio/8111474/" target="_blank" rel="noopener noreferrer">Кейс на FL.ru <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a class="btn btn-outline btn-sm" href="https://work-zilla.com/portfolio/eLAZvV" target="_blank" rel="noopener noreferrer">Профиль Workzilla <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </div>
+          <div class="principles-grid">
+            
+    <div class="principle-card">
+      <h3>Честный статус каждой работы</h3>
+      <p>Всегда видно, где обезличенный клиентский кейс, где личный инженерный проект, а где проверенный прототип.</p>
+    </div>
+    <div class="principle-card">
+      <h3>Защита от дублей и сбоев</h3>
+      <p>Автоматизация не должна плодить повторные заявки или ломаться от одного неверного поля в таблице.</p>
+    </div>
+    <div class="principle-card">
+      <h3>Сначала пилот, потом масштаб</h3>
+      <p>Перед крупным внедрением проверяем связку на небольшом объёме данных, чтобы вы видели результат заранее.</p>
+    </div>
+    <div class="principle-card">
+      <h3>Понятное общение без зауми</h3>
+      <p>Объясняю решения нормальным человеческим языком — без лишнего жаргона и скрытых условий.</p>
+    </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Обсудить задачу -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div>
+            <div class="section-eyebrow">Связаться</div>
+            <h2 class="section-title">Обсудим вашу задачу в Telegram</h2>
+            <p class="section-desc">Напишите пару строк о том, что хочется автоматизировать. Подскажу, как это лучше сделать, с чего начать и нужен ли короткий пилот.</p>
+            <div class="contact-list">
+              <a class="contact-pill" href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="contact-pill-label">Личный Telegram для связи</div>
+                  <div class="contact-pill-value">@yury_zakusov</div>
+                </div>
+                <span class="btn btn-primary btn-sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Написать</span>
+              </a>
+              <a class="contact-pill" href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <div class="contact-pill-label">Telegram-канал с работами</div>
+                  <div class="contact-pill-value">t.me/integrator_raboty</div>
+                </div>
+                <span class="btn btn-outline btn-sm">Открыть <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="tg-composer">
+            <h3>Собрать сообщение за 15 секунд</h3>
+            <p class="tg-composer-sub">Выберите направление и напишите пару слов — откроется Telegram уже с готовым текстом.</p>
+            <div class="topic-chips" role="group" aria-label="Выберите направление">
+              <button class="topic-chip" type="button" data-topic="Telegram-бот">Telegram-бот</button>
+              <button class="topic-chip" type="button" data-topic="Сценарий n8n / Make">n8n / Make</button>
+              <button class="topic-chip" type="button" data-topic="ИИ-агент">ИИ-агент</button>
+              <button class="topic-chip" type="button" data-topic="CRM и заявки">CRM и заявки</button>
+              <button class="topic-chip" type="button" data-topic="Python-скрипт">Python-скрипт</button>
+              <button class="topic-chip" type="button" data-topic="Сайт">Сайт</button>
+            </div>
+            <label for="tgMessageInput" class="sr-only">Коротко опишите задачу</label>
+            <textarea id="tgMessageInput" class="composer-textarea" placeholder="Например: клиенты пишут вечером, нужно чтобы бот принимал заявку и отправлял её в Google Таблицу и менеджеру..."></textarea>
+            <a id="tgComposerBtn" class="btn btn-coral" data-base-url="https://t.me/yury_zakusov" href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer" style="width:100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6c.3-1.2-.8-2.1-1.9-1.6L2.7 9.8c-1.2.5-1.1 2.2.1 2.6l4.4 1.4 1.7 5.3c.3 1 1.6 1.2 2.3.5l2.5-2.5 4.5 3.3c1 .7 2.4.2 2.6-1l1.1-14.8zM9.4 13.7l8.3-5.2-6.5 6.8-.3 3.1-1.5-4.7z"/></svg> Открыть Telegram с готовым текстом
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Юрий Закусов</strong> · Автоматизация бизнеса, ИИ-агенты, Telegram-боты, n8n, CRM и Python
+      </div>
+      <div class="footer-links">
+        <a href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer">Telegram: @yury_zakusov</a>
+        <a href="https://t.me/integrator_raboty" target="_blank" rel="noopener noreferrer">Канал с работами</a>
+        <a href="https://www.fl.ru/user/yuryzakusov78/portfolio/8111474/" target="_blank" rel="noopener noreferrer">FL.ru</a>
+        <a href="https://work-zilla.com/portfolio/eLAZvV" target="_blank" rel="noopener noreferrer">Workzilla</a>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
