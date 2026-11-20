@@ -138,9 +138,16 @@ function renderFooter(basePrefix = '') {
           </ul>
         </div>
       </div>
+      <div class="footer-disclaimer">
+        Информация на сайте носит ознакомительный характер и не является публичной офертой. Итоговый объём, сроки и стоимость работ согласуются индивидуально после разбора задачи и проверки доступов.
+      </div>
       <div class="footer-bottom">
-        <div>© 2026 ${esc(site.brand.name)} · Все работы подтверждены первоисточниками</div>
-        <a class="footer-top-link" href="#top">Наверх ↑</a>
+        <div>© 2026 ${esc(site.brand.name)}. Все права защищены.</div>
+        <div class="footer-bottom-links">
+          <a href="${esc(site.brand.telegramUrl)}" target="_blank" rel="noopener noreferrer">Telegram: ${esc(site.brand.telegramHandle)}</a>
+          <a href="${esc(site.brand.channelUrl)}" target="_blank" rel="noopener noreferrer">Канал: ${esc(site.brand.channelLabel)}</a>
+          <a class="footer-top-link" href="#top">Наверх ↑</a>
+        </div>
       </div>
     </div>
   </footer>`;
@@ -179,10 +186,7 @@ function renderProjectCard(p, basePrefix = '', isFeatured = false) {
       <img src="${basePrefix}${esc(p.coverImage)}" alt="${esc(p.title)}" loading="lazy" width="640" height="400">
     </a>
     <div class="card-body">
-      <div class="card-meta-row">
-        <div class="card-cat">${esc(p.categoryLabel)}</div>
-        <span class="status-badge status-${esc(p.statusType)}">${esc(p.status)}</span>
-      </div>
+      <div class="card-cat">${esc(p.categoryLabel)}</div>
       <h3 class="card-title"><a href="${detailUrl}">${esc(p.title)}</a></h3>
       <p class="card-problem">${esc(p.problem)}</p>
       <div class="card-benefit"><strong>Польза:</strong> ${esc(p.benefit)}</div>
@@ -290,23 +294,23 @@ function buildHomePage() {
           <div class="facts-strip">
             <div class="fact-card">
               <div class="fact-num">${projects.length}</div>
-              <div class="fact-label">Проверенных работ</div>
-              <div class="fact-sub">Из канала t.me/integrator_raboty и архива V3</div>
+              <div class="fact-label">Примеров работ</div>
+              <div class="fact-sub">Реальные схемы, код и материалы из t.me/integrator_raboty</div>
             </div>
             <div class="fact-card">
-              <div class="fact-num">5</div>
-              <div class="fact-label">Коммерческих кейсов</div>
-              <div class="fact-sub">Обезличенные сценарии n8n, API, Supabase и ИИ</div>
-            </div>
-            <div class="fact-card">
-              <div class="fact-num">100%</div>
-              <div class="fact-label">Честные статусы</div>
-              <div class="fact-sub">Чётко разделяю коммерцию, личные проекты и демо</div>
+              <div class="fact-num">6</div>
+              <div class="fact-label">Направлений</div>
+              <div class="fact-sub">ИИ-агенты, Telegram-боты, n8n, CRM, Python и сайты</div>
             </div>
             <div class="fact-card">
               <div class="fact-num">1–2 дня</div>
               <div class="fact-label">Быстрый пилот</div>
               <div class="fact-sub">Сначала проверяем задачу на малом объёме данных</div>
+            </div>
+            <div class="fact-card">
+              <div class="fact-num">Telegram</div>
+              <div class="fact-label">Прямая связь</div>
+              <div class="fact-sub">Общаемся напрямую без посредников: @yury_zakusov</div>
             </div>
           </div>
         </div>
@@ -510,9 +514,8 @@ function buildProjectPage(project) {
 
       <section class="detail-hero">
         <div>
-          <span class="status-badge status-${esc(project.statusType)}">${esc(project.status)}</span>
-          <h1 class="detail-title">${esc(project.title)}</h1>
-          <div class="card-cat" style="margin-bottom:14px;">${esc(project.categoryLabel)}</div>
+          <div class="card-cat" style="margin-bottom:8px;">${esc(project.categoryLabel)}</div>
+          <h1 class="detail-title" style="margin-top:0;">${esc(project.title)}</h1>
           <div class="stack-tags" style="margin-bottom:0;">
             ${project.stack.map((t) => `<span class="stack-tag">${esc(t)}</span>`).join('')}
           </div>
