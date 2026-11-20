@@ -54,7 +54,7 @@ function renderHeader(basePrefix = '') {
         <span>${esc(site.brand.name)}</span>
       </a>
       <nav class="nav-links" aria-label="Основная навигация">
-        <a href="${basePrefix}index.html">Главная</a>
+        <a class="${basePrefix ? '' : 'is-current'}" href="${basePrefix}index.html">Главная</a>
         <a href="${basePrefix}index.html#portfolio">Мои работы</a>
         <a href="${basePrefix}index.html#services">Чем могу помочь</a>
         <a href="${basePrefix}index.html#process">Как я работаю</a>
@@ -66,9 +66,9 @@ function renderHeader(basePrefix = '') {
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 9v6"/><path d="M14 9v6"/></svg>
           <span>Меньше анимации</span>
         </button>
-        <a class="btn btn-primary btn-sm header-cta-desktop" href="${esc(site.brand.telegramUrl)}" target="_blank" rel="noopener noreferrer">
+        <a class="btn btn-coral btn-sm header-cta-desktop" href="${esc(site.brand.telegramUrl)}" target="_blank" rel="noopener noreferrer">
           ${ICONS.telegram}
-          <span>Написать в Telegram</span>
+          <span>Telegram</span>
         </a>
         <button id="burgerBtn" class="burger-btn" type="button" aria-label="Открыть меню" aria-expanded="false">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
