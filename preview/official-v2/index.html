@@ -50,6 +50,24 @@ section{padding:74px 0}.section-heading{display:flex;align-items:end;justify-con
 @media(max-width:480px){.hero-canary h1{font-size:clamp(37px,9.5vw,45px)}.hero-canary .visual.pipeline{padding:17px}.pipeline-step{gap:8px;grid-template-columns:25px minmax(0,1fr) auto}.pipeline-step strong{font-size:17px}.pipeline-step div span,.pipeline-output{font-size:12px}.pipeline-caption{gap:6px}.pipeline-connector{margin-left:11px}}
 @media(prefers-reduced-motion:reduce){.pipeline-connector span{animation:none;display:none}}
 body.no-motion .pipeline-connector span{animation:none;display:none}
+
+/* Sites glass canary: CSS-only approximation, no page capture or WebGL. */
+header{background:#141e34;backdrop-filter:none;-webkit-backdrop-filter:none;border-bottom:1px solid #52657f;box-shadow:0 8px 25px #0003,inset 0 1px 0 #ffffff20}
+header .header-inner{position:relative}
+header .nav-cta{border-color:#94b9c2;background:linear-gradient(160deg,#ffffff18,#70fbd608 48%,#ffffff09);box-shadow:inset 0 1px 0 #ffffff48,inset 0 -1px 0 #0004,0 3px 12px #0002;color:#b6ffe9}
+header .nav-cta:hover{border-color:#a6ffed;color:#e1fff5}
+.lite header{background:#e7eef8;border-bottom-color:#a3b4c8;box-shadow:0 8px 25px #182c4414,inset 0 1px 0 #ffffffa0}
+.lite header .nav-cta{background:linear-gradient(160deg,#ffffffb8,#d2e9e4);border-color:#779a97;color:#145648;box-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 #28394f19,0 3px 12px #223c4510}
+.lite header .nav-cta:hover{color:#123e36;border-color:#326f65}
+@supports ((backdrop-filter:blur(12px)) or (-webkit-backdrop-filter:blur(12px))){
+ @media(min-width:701px) and (prefers-reduced-transparency:no-preference){
+  header{background:linear-gradient(150deg,#202d47ef,#121c30e8 55%,#1c2d40ed);backdrop-filter:blur(12px) saturate(135%);-webkit-backdrop-filter:blur(12px) saturate(135%)}
+  .lite header{background:linear-gradient(150deg,#f2f7fbeF,#e6edf7e8 55%,#e0f0ebed)}
+ }
+}
+@media(max-width:700px){header{background:#141e34;backdrop-filter:none;-webkit-backdrop-filter:none}.lite header{background:#e7eef8}}
+@media(prefers-reduced-transparency:reduce){header{backdrop-filter:none;-webkit-backdrop-filter:none;background:#141e34}.lite header{background:#e7eef8}}
+@media(forced-colors:active){header,header .nav-cta,.lite header,.lite header .nav-cta{background:Canvas;color:CanvasText;border-color:CanvasText;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}}
 </style>
 </head>
 <body>
