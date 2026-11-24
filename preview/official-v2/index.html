@@ -83,7 +83,7 @@ header .nav-cta:hover{border-color:#a6ffed;color:#e1fff5}
 .about-credential img{display:block;width:100%;height:auto;aspect-ratio:1600/1131;background:#fff;border-radius:8px;margin:18px 0}
 .about-credential .cert-toggle{color:var(--aqua);font-weight:700;text-decoration:underline;text-underline-offset:4px}
 .about-credential .cert-close{display:none}
-.about-credential[open]{grid-column:1/-1}
+.about-credential[open]{grid-column:1/-1;grid-row:1}.about-grid-v2:has(.about-credential[open]){grid-template-columns:minmax(0,1fr)}.about-credential[open] summary{display:flex;flex-direction:column}.about-credential[open] .cert-toggle{order:-1;align-self:flex-end;margin-bottom:14px}
 .about-credential[open] .cert-close{display:inline}
 .about-credential[open] .cert-open{display:none}
 .about-credential[open] img{max-width:1100px;margin-inline:auto}
