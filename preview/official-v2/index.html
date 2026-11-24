@@ -20,15 +20,57 @@ section{padding:74px 0}.section-heading{display:flex;align-items:end;justify-con
 @keyframes float{50%{transform:translateY(-13px)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{50%{box-shadow:0 0 0 11px #71fbd308}}
 @media(max-width:1000px){.hero{grid-template-columns:1fr;padding-top:64px}.visual{min-height:460px}.grid{grid-template-columns:repeat(2,1fr)}.tools{grid-template-columns:1fr}.workflow{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.wrap{width:min(100% - 30px,1170px)}header .header-inner{min-height:70px}.menu{display:block}nav{display:none;position:absolute;top:70px;left:0;right:0;background:#101831f5;padding:22px;flex-direction:column;align-items:stretch;box-shadow:0 30px 50px #05091ccc}nav.open{display:flex}nav a{padding:8px}.hero{gap:18px}.hero h1{font-size:clamp(39px,11vw,64px)}.hero p{font-size:16px}.visual{min-height:390px;transform:scale(.83)}.orbit{width:380px;height:380px}.orbit.two{width:290px;height:290px}.center-node{width:190px;height:190px}.node.n1{left:0}.node.n2{right:-25px}.node.n3{left:-20px}.node.n4{right:0}.grid,.workflow{grid-template-columns:1fr}.section-heading{display:block}.contact{display:block;padding:26px}section{padding:52px 0}.panel{padding:24px}.actions .btn{width:100%}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}body.no-motion *,body.no-motion *:before,body.no-motion *:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}body.no-motion .reveal{opacity:1;transform:none}
 @media(max-width:700px){.visual{overflow:hidden}}
+
+/* Design canary: one meaningful process diagram, no changes to lead handlers. */
+.hero-canary{gap:clamp(24px,4vw,60px);grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}
+.hero-canary .hero-copy{min-width:0}
+.hero-canary h1{font-size:clamp(42px,4.8vw,70px);letter-spacing:-.038em;line-height:1.06;margin:0 0 22px;max-width:14ch}
+.hero-canary .hero-copy p{max-width:57ch}
+.hero-canary .tagline{line-height:1.8}
+.hero-canary .visual.pipeline{--pipe-ink:#eaf3ff;--pipe-muted:#b5c7df;--pipe-surface:#101d35;--pipe-line:#36536f;--pipe-accent:#79e5c4;--pipe-warm:#ffcb8a;display:block;isolation:isolate;position:relative;margin:0;padding:clamp(19px,2.3vw,30px);min-height:0;min-width:0;overflow:hidden;transform:none;border:1px solid var(--pipe-line);border-radius:20px;background:var(--pipe-surface);color:var(--pipe-ink);box-shadow:none}
+.pipeline-caption{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding-bottom:20px;border-bottom:1px solid var(--pipe-line)}
+.pipeline-caption strong{display:block;font-size:clamp(19px,2vw,24px);letter-spacing:-.025em;line-height:1.25}
+.hero-canary .pipeline-caption p{font-size:12px;line-height:1.55;color:var(--pipe-muted);margin:6px 0 0}
+.pipeline-demo{flex:none;border:1px solid var(--pipe-line);border-radius:6px;color:var(--pipe-muted);padding:5px 8px;font-size:12px}
+.pipeline-steps{list-style:none;padding:20px 0 0;margin:0}
+.pipeline-step{display:grid;grid-template-columns:30px minmax(0,1fr) auto;align-items:center;gap:12px;min-width:0;padding:15px 0}
+.pipeline-step .pipeline-index{align-self:start;padding-top:2px;color:var(--pipe-accent);font-variant-numeric:tabular-nums;font-size:12px;font-weight:750}
+.pipeline-step strong{display:block;font-size:19px;line-height:1.25;letter-spacing:-.02em;color:var(--pipe-ink)}
+.pipeline-step div span{display:block;color:var(--pipe-muted);font-size:13px;line-height:1.45;margin-top:5px;overflow-wrap:anywhere}
+.pipeline-output{color:var(--pipe-accent);font-size:12px;font-weight:750;align-self:center;text-align:right;white-space:nowrap}
+.pipeline-record .pipeline-output,.pipeline-notify .pipeline-output{color:var(--pipe-warm)}
+.pipeline-connector{height:22px;margin-left:14px;position:relative;width:2px;background:var(--pipe-line)}
+.pipeline-connector span{position:absolute;top:0;left:-2px;width:6px;height:8px;border-radius:2px;background:var(--pipe-accent);animation:pipeline-signal 2.4s ease-out 1 both}
+.pipeline-connector:nth-child(4) span{animation-delay:.28s}
+.pipeline-connector:nth-child(6) span{animation-delay:.56s}
+@keyframes pipeline-signal{0%{transform:translateY(0);opacity:0}18%{opacity:1}80%{opacity:1}100%{transform:translateY(14px);opacity:0}}
+.pipeline-foot{padding-top:18px;margin-top:12px;border-top:1px solid var(--pipe-line);font-size:13px;font-weight:650;color:var(--pipe-muted)}
+.lite .hero-canary .visual.pipeline{--pipe-ink:#142d45;--pipe-muted:#445e77;--pipe-surface:#edf4fa;--pipe-line:#a5b9ce;--pipe-accent:#126756;--pipe-warm:#875014}
+@media(max-width:1000px){.hero-canary{grid-template-columns:minmax(0,1fr)}.hero-canary .visual.pipeline{width:100%;max-width:650px;justify-self:start}}
+@media(max-width:480px){.hero-canary h1{font-size:clamp(37px,9.5vw,45px)}.hero-canary .visual.pipeline{padding:17px}.pipeline-step{gap:8px;grid-template-columns:25px minmax(0,1fr) auto}.pipeline-step strong{font-size:17px}.pipeline-step div span,.pipeline-output{font-size:12px}.pipeline-caption{gap:6px}.pipeline-connector{margin-left:11px}}
+@media(prefers-reduced-motion:reduce){.pipeline-connector span{animation:none;display:none}}
+body.no-motion .pipeline-connector span{animation:none;display:none}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Перейти к содержимому</a>
 <header><div class="wrap header-inner"><a class="brand" href="#top" aria-label="На главную"><span class="mark">ЮЗ</span><span>Юрий Закусов<small>ИНТЕГРАТОР · DIGITAL ENGINEERING</small></span></a><button class="menu" id="menuButton" type="button" aria-expanded="false" aria-controls="nav">Меню ☰</button><nav id="nav" aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#projects">Работы</a><a href="#approach">Подход</a><a href="#brief">Подбор решения</a><a href="#faq">Вопросы</a><a class="nav-cta" href="#contact">Обсудить задачу ↗</a></nav></div></header>
 <main id="main">
-<div class="wrap hero" id="top">
-<div><span class="kicker"><span class="dot"></span> Цифровые системы для реальных задач</span><h1>Ваш бизнес.<br><span class="gradient-text">Умные процессы.</span><br>Больше свободы.</h1><p>Создаю сайты, ИИ-агентов, Telegram-ботов и автоматизацию. Соединяю сервисы в понятную систему — с проверкой результата и защитой от сбоев.</p><div class="actions"><a class="btn main" href="#brief">Подобрать решение <span aria-hidden="true">↗</span></a><a class="btn ghost" href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer">Написать в Telegram</a></div><div class="tagline"><b>Python • n8n • CRM • API • AI</b> · Собственные разработки и подтверждённые кейсы</div></div>
-<div class="visual" aria-label="Визуальная схема: сайт, автоматизация, CRM, ИИ-агент и Telegram работают вместе"><div class="glow"></div><div class="orbit"></div><div class="orbit two"></div><div class="node n1"><b>01 · Запрос</b>🌐 Сайт и формы</div><div class="node n2"><b>02 · Автоматизация</b>⚡ n8n / API</div><div class="node n3"><b>03 · Контроль</b>📋 CRM и задачи</div><div class="node n4"><b>04 · Результат</b>💬 Telegram</div><div class="center-node"><div><strong>AIAA</strong><small>ИНЖЕНЕРНЫЙ КОНТУР</small></div></div></div>
+<div class="wrap hero hero-canary" id="top">
+<div class="hero-copy"><h1>Сайт, CRM и ИИ.<br>Одна рабочая цепочка.</h1><p>Создаю сайты и автоматизацию, которые связывают обращения клиентов, обработку данных и работу команды. Начинаем с конкретной задачи и проверяем каждый этап.</p><div class="actions"><a class="btn main" href="#brief">Подобрать решение</a><a class="btn ghost" href="https://t.me/yury_zakusov" target="_blank" rel="noopener noreferrer">Написать в Telegram</a></div><div class="tagline"><b>Python · n8n · CRM · API · AI</b><br>Собственные разработки и подтверждённые кейсы</div></div>
+<figure class="visual pipeline" aria-labelledby="pipeline-title" aria-describedby="pipeline-description">
+<figcaption class="pipeline-caption"><div><strong id="pipeline-title">Путь клиентской заявки</strong><p id="pipeline-description">Пример схемы интеграции, не данные работающего сервера.</p></div><span class="pipeline-demo">Схема</span></figcaption>
+<ol class="pipeline-steps">
+<li class="pipeline-step pipeline-intake"><span class="pipeline-index">01</span><div><strong>Сайт</strong><span>Клиент описывает задачу</span></div><span class="pipeline-output">Запрос</span></li>
+<li class="pipeline-connector" aria-hidden="true"><span></span></li>
+<li class="pipeline-step pipeline-transform"><span class="pipeline-index">02</span><div><strong>n8n / ИИ</strong><span>Обработка и проверка данных</span></div><span class="pipeline-output">Маршрут</span></li>
+<li class="pipeline-connector" aria-hidden="true"><span></span></li>
+<li class="pipeline-step pipeline-record"><span class="pipeline-index">03</span><div><strong>CRM</strong><span>Контакт и история обращения</span></div><span class="pipeline-output">Карточка</span></li>
+<li class="pipeline-connector" aria-hidden="true"><span></span></li>
+<li class="pipeline-step pipeline-notify"><span class="pipeline-index">04</span><div><strong>Telegram</strong><span>Команда получает уведомление</span></div><span class="pipeline-output">Ответ</span></li>
+</ol>
+<div class="pipeline-foot">Один процесс. Понятные точки контроля.</div>
+</figure>
 </div>
 <section id="services" class="wrap"><div class="section-heading reveal"><div><span class="eyebrow">Что можно улучшить</span><h2>Разработка, которая<br>решает проблему.</h2></div><p class="sub">Один исполнитель — от структуры и дизайна до интеграций и проверки. Без выдуманных гарантий и «волшебных кнопок».</p></div><div class="grid">
 <article class="glass service reveal"><div class="symbol">🌐</div><h3>Современные сайты</h3><p>Красочный адаптивный дизайн, анимация, каталог услуг и форма обращения. Сначала превью и тесты, затем публикация.</p><div class="card-foot">Лендинги · Сайты услуг · Портфолио</div></article>
